@@ -137,7 +137,7 @@ class SocketClient {
 
       const { quantity: amount, type, side, timestamp, reason, price } = data;
       const msg = `收到 ${side} ${type} ${amount} 在 ${price} ${reason}`;
-      this.bark.sendTradeNotification(msg, '');
+      this.bark.sendTradeNotification(msg, {success:true});
       // 检查信号时效性（可选）
       if (timestamp) {
         const now = Date.now();
