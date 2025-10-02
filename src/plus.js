@@ -457,7 +457,8 @@ class SocketClient {
         const local_size = Math.abs(Number(local_pos.size));
         const remote_size = remote_pos.size * this.scale;
 
-        if (add_size > 0 && this.indicators.can_add_flag === true && local_size <= remote_size) {
+        if (add_size > 0 && this.indicators.can_add_flag === true && local_size <= remote_size) { 
+          //要对比仓位大小,不然会出现本地现价单成交了 但是模拟端没成交 就会不停的成交
           const size = add_size * this.scale;
           console.log(`第${addCount}次补仓 ${side} ${size} ==> ${price}`);
           if (this.add_order_id_string === '') {
