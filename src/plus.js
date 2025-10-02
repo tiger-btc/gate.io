@@ -134,9 +134,10 @@ class SocketClient {
   async handleTradeSignal(data) {
     try {
       console.log('收到交易信号', data);
-      this.bark.sendTradeNotification(data, '');
 
       const { quantity: amount, type, side, timestamp, reason, price } = data;
+      const msg = `收到 ${side} ${type} ${amount} 在 ${price} ${reason}`;
+      this.bark.sendTradeNotification(msg, '');
       // 检查信号时效性（可选）
       if (timestamp) {
         const now = Date.now();
@@ -147,7 +148,7 @@ class SocketClient {
           return;
         }
       }
-      console.log(`收到 ${side} ${type} ${amount} 在 ${price} ${reason}`);
+      console.log(msg);
 
       // 执行交易操作
       let flag = false;
@@ -343,7 +344,7 @@ class SocketClient {
       const { side, size: local_size, price: local_entry } = local_pos;
       const can_open_flag = side === 'LONG' ? this.indicators.can_open_long_flag : this.indicators.can_open_short_flag;
       if (remote_pos) {
-        console.log(`模拟仓位: ${remote_pos.side} ${Number(remote_pos.price).toFixed(2)} ${remote_pos.size}`);
+        console.log(`模拟仓位: ${remote_pos.side} 均价:${Number(remote_pos.price).toFixed(2)} 数量:${remote_pos.size}`);
         // 服务端也有仓位才会设置止盈
         // reduceCount = 0 的时候 如果 加仓次数 禁止标志 可开仓标志 可加仓标志 都满足的话 不设置止盈 有一项不符合 设置止盈 提前跑
         const { addCount, reduceCount } = remote_pos;
@@ -420,7 +421,7 @@ class SocketClient {
         await this.clearOrders();
       }
 
-      console.log(`模拟仓位: ${side} 补仓价:${Number(old_price).toFixed(2)} ${remote_size} ${add_conf} 补仓:${addCount}次`);
+      console.log(`模拟仓位: ${side} 补仓价:${Number(old_price).toFixed(2)} ${remote_size} ${add_conf.join(',')} 补仓:${addCount}次`);
       const can_open_flag = side === 'LONG' ? this.indicators.can_open_long_flag : this.indicators.can_open_short_flag;
       if (local_pos === null) {
         // 本地无仓位 这里判断null 是为了区别于网络获取失败的时候结果的undefined
@@ -461,7 +462,7 @@ class SocketClient {
         // 开多的时候 加仓的价格必须比当前价格要低
         // 开空的时候 加仓的价格必须比当前价格要高
 
-        if (add_size > 0 && this.indicators.can_add_flag === true && local_size <= remote_size && price_ok) { 
+        if (add_size > 0 && this.indicators.can_add_flag === true && local_size <= remote_size && price_ok) {
           //要对比仓位大小,不然会出现本地现价单成交了 但是模拟端没成交 就会不停的成交
           const size = add_size * this.scale;
           console.log(`第${addCount}次补仓 ${side} ${size} ==> ${price}`);
