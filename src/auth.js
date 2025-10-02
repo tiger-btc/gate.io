@@ -1,11 +1,20 @@
 const { readJsonFromFileSync } = require('./modules/json');
 const ConfigApi = require('./api/configApi');
+const { NotificationService } = require('./modules/notificationService');
 
 class TradingSystem {
   constructor() {
     this.config = null;
     this.configApi = null;
+    this.bark = null;
   }
+
+  async send_to_phone(msg) {
+    if (this.bark) {
+      return await this.bark.sendNotification(msg, 'GATE.IO');
+    }
+  }
+  
 
   // 加载配置
   async loadConfig() {
@@ -13,7 +22,9 @@ class TradingSystem {
       const configPath = './config/default.json';
       const configData = readJsonFromFileSync(configPath);
       this.config = configData;
+      this.bark = new NotificationService(this.config.notification);
       console.log(`配置文件 ${configPath} 加载成功`, this.config);
+      await this.send_to_phone('授权收集模块启动');
     } catch (error) {
       console.log(error.stack);
       throw error;
@@ -25,6 +36,7 @@ class TradingSystem {
     try {
       // 初始化配置API
       this.configApi = new ConfigApi();
+      this.configApi.set_bark(this.bark);
     } catch (error) {
       console.log(error.stack);
     }
@@ -45,11 +57,6 @@ class TradingSystem {
   async shutdown() {
     console.log('正在关闭交易系统...');
     try {
-      // 停止心跳监控
-      if (this.configApi) {
-        this.configApi.stopHeartbeatMonitor();
-      }
-
       console.log('交易系统已安全关闭');
     } catch (error) {
       console.log(error.stack);

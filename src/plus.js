@@ -3,6 +3,7 @@ const logger = require('./modules/logger');
 const { io } = require('socket.io-client');
 const { readJsonFromFileSync } = require('./modules/json');
 const { formatTimestamp } = require('./modules/util');
+const { NotificationService } = require('./modules/notificationService');
 
 const WANT_USDT = 2.8;
 
@@ -33,13 +34,21 @@ class SocketClient {
     this.last_t = 0;
     this.scale = 1;
     this.limit_add_size = 0;
+    this.config = readJsonFromFileSync('./config/default.json');
+    this.bark = new NotificationService(this.config.notification);
     setTimeout(async () => {
-      logger.error('start');
-      await this.updateAuth(true);
+      this.bark.sendNotification('交易系统启动', 'GATE.IO');
+      await this.updateAuth();
     }, 0);
     setInterval(async () => {
-      await this.updateAuth(false);
+      await this.updateAuth();
     }, 1000);
+  }
+
+  async send_to_phone(msg) {
+    if (this.bark) {
+      return await this.bark.sendNotification(msg, 'GATE.IO');
+    }
   }
 
   // 连接Socket.IO服务器
@@ -62,6 +71,7 @@ class SocketClient {
         socketId: this.socket.id,
         url: this.url
       });
+      this.send_to_phone('大脑已连接');
     });
 
     // 连接断开
@@ -71,6 +81,7 @@ class SocketClient {
         reason,
         socketId: this.socket.id
       });
+      this.send_to_phone('大脑断开');
     });
 
     // 连接错误
@@ -89,6 +100,8 @@ class SocketClient {
       this.isConnected = true;
       this.reconnectAttempts = 0;
       console.log(`Socket.IO重连 ${attemptNumber} 成功`);
+      this.send_to_phone('大脑已恢复连接');
+
     });
 
     // 监听交易信号
@@ -121,6 +134,7 @@ class SocketClient {
   async handleTradeSignal(data) {
     try {
       console.log('收到交易信号', data);
+      this.bark.sendTradeNotification(data, '');
 
       const { quantity: amount, type, side, timestamp, reason, price } = data;
       // 检查信号时效性（可选）
@@ -237,7 +251,7 @@ class SocketClient {
           const total_fee = Math.abs((Number(pnl_fee)) - will_fee);
           const fy = total_fee * 0.7;
           const total_win = yl + fy;
-          const msg = `${side} : ${t_s} ${size / 100} ${contract} @ ${entry_price} ==> ${mark_price} \n预计盈利: ${yl.toFixed(2)} 期望盈利:${WANT_USDT} 共计盈利:${total_win.toFixed(2)}\n手续费: ${Number(pnl_fee).toFixed(2)} - ${will_fee.toFixed(2)} = ${total_fee.toFixed(2)} 返佣：${fy.toFixed(2)}`;
+          const msg = `真实仓位: ${side} : ${t_s} ${size / 100} ${contract} @ ${entry_price} 当前价格: ${mark_price} \n预计盈利: ${yl.toFixed(2)} 期望盈利:${WANT_USDT} 共计盈利:${total_win.toFixed(2)}\n手续费: ${Number(pnl_fee).toFixed(2)} - ${will_fee.toFixed(2)} = ${total_fee.toFixed(2)} 返佣：${fy.toFixed(2)}`;
           console.log(msg);
           const pos =
           {
@@ -267,6 +281,7 @@ class SocketClient {
       };
       const result = await this.httpClient.post('/apiw/v2/futures/usdt/positions/close_all', closeData);
       console.log(`${msg} 一键平仓`, result);
+      this.send_to_phone('一键平仓');
     } catch (error) {
       logger.error(error.stack);
     }
@@ -283,6 +298,7 @@ class SocketClient {
       console.log(`清空所有委托单`, ret.message);
       this.reduce_order_id_string = ''; // 限价止盈单id
       this.add_order_id_string = ''; // 限价加仓单id
+      this.send_to_phone('取消所有委托');
     } catch (error) {
       logger.error(error.stack);
     }
@@ -514,8 +530,9 @@ class SocketClient {
         "size": (dir * size * 100).toFixed(0) // 平空是整数平多是负数
       }
       const ret = await this.httpClient.post(url, pd);
-      console.log(`创建止盈限价单 ${side} ${price.toFixed(2)} ${size}`);
-      console.log(ret.message);
+      const msg = `创建止盈限价单 ${side} ${price.toFixed(2)} ${size} ${ret.message}`;
+      console.log(msg);
+      this.send_to_phone(msg);
       if (ret.message === 'success') {
         this.reduce_order_id_string = ret.data.id_string;
       }
@@ -548,13 +565,16 @@ class SocketClient {
         }
         const ret = await this.httpClient.post(url, pd);
         //const ret = { data: { id_string: "test" } };
-        console.log(ret.message);
         if (price) {
           this.add_order_id_string = ret.data.id_string;
-          console.log(`补仓限价单@${price.toFixed(2)} ${side}  ${size}`);
+          const msg = `补仓限价单@${price.toFixed(2)} ${side} ${size} ${ret.message}`
+          console.log(msg);
+          this.send_to_phone(msg);
         }
         else {
-          console.log(`开入市价单 ${side} ${size}`);
+          const msg = `开入市价单 ${side} ${size} ${ret.message}`;
+          console.log(msg);
+          this.send_to_phone(msg);
         }
 
         return this.add_order_id_string;
@@ -575,17 +595,23 @@ class SocketClient {
       // 多单无法改成空单 空单无法改成多单 但是同向可以改
       const cur_order = this.local_order_cache.filter(e => e.id_string === id_string).at(0);
       if (!cur_order) {
-        console.error(`传入订单编号 ${id_string} 查找不到,请尽快处理`);
+        const msg = `传入订单编号 ${id_string} 查找不到,请尽快处理`;
+        console.log(msg);
+        this.send_to_phone(msg);
+        await this.clearOrders();
         return false;
       }
 
       const cur_order_price = Number(cur_order.price).toFixed(1);
-      console.log(`当前委托价格: ${cur_order_price} ==> ${price.toFixed(1)}`);
+      const order_type = cur_order.is_reduce_only ? '平仓' : '补仓';
+      console.log(`当前${order_type}委托价格: ${cur_order_price} ==> ${price.toFixed(1)}`);
       if (price.toFixed(1) !== cur_order_price) {
         const url = `/apiw/v2/futures/usdt/orders/${id_string}`;
         const pd = { "contract": this.contract, "size": (size * 100).toFixed(0), "price": price.toFixed(1) }
         const ret = await this.httpClient.put(url, pd);
-        console.log('修改委托', ret);
+        const msg = `修改${order_type}委托 ${ret.message}`;
+        console.log(msg);
+        this.send_to_phone(msg);
         return ret;
       }
 
@@ -601,8 +627,9 @@ class SocketClient {
       const dir = side === 'SHORT' ? 1 : -1; //止盈是反方向
       const ret = await this.updateLimitOrder(this.reduce_order_id_string, size * dir, price);
       if (ret) {
-        console.log(`修改止盈限价单 ${this.reduce_order_id_string} ${side} ${price.toFixed(2)} ${size}`);
-        console.log(ret.message);
+        const msg = `修改止盈限价单 ${this.reduce_order_id_string} ${side} ${price.toFixed(2)} ${size}`;
+        console.log(msg);
+        this.send_to_phone(msg);
       }
     } catch (error) {
       logger.error(error.stack);
@@ -615,8 +642,9 @@ class SocketClient {
       const dir = side === 'SHORT' ? -1 : 1; //加仓是正方向
       const ret = await updateLimitOrder(this.add_order_id_string, size * dir, price);
       if (ret) {
-        console.log(`修改止盈限价单 ${this.reduce_order_id_string} ${side} ${price.toFixed(2)} ${size}`);
-        console.log(ret.message);
+        const msg = `修改止盈限价单 ${this.reduce_order_id_string} ${side} ${price.toFixed(2)} ${size}`;
+        console.log(msg);
+        this.send_to_phone(msg);
       }
     } catch (error) {
       logger.error(error.stack);
@@ -672,7 +700,7 @@ class SocketClient {
     }
   }
 
-  async updateAuth(is_first = false) {
+  async updateAuth() {
     try {
       const t_sub = (Date.now() - this.last_t) / 1000;
       //console.log(`保护:${t_sub}`);

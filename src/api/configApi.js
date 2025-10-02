@@ -7,10 +7,23 @@ class ConfigApi {
     this.runtimeConfigPath = './config/runtime.json';
     this.lastHeartbeat = null;
     this.heartbeatTimer = null;
-
+    this.bark = null;
     this.setupMiddleware();
     this.setupRoutes();
+    this.count = 0;
   }
+
+  set_bark(bark) {
+    this.bark = bark;
+  }
+
+
+  async send_to_phone(msg) {
+    if (this.bark) {
+      return await this.bark.sendNotification(msg, 'GATE.IO');
+    }
+  }
+
 
   // 设置中间件
   setupMiddleware() {
@@ -143,6 +156,11 @@ class ConfigApi {
 
     const expire_msg = getTokenExpiryInfoFromCookie(data.headers.cookie);
     const { remainingDays } = expire_msg;
+
+    if (remainingDays < 2 || this.count < 1) {
+      await this.send_to_phone(`授权将在${remainingDays.toFixed(1)}天后到期`);
+    }
+    this.count += 1;
 
     console.log('Header配置已更新', {
       baseURL: data.baseURL,
