@@ -364,14 +364,15 @@ class SocketClient {
         const min_price = price_1 > price_2 ? price_2 : price_1;
         const max_price = price_1 > price_2 ? price_1 : price_2;
         const price = side === 'LONG' ? min_price : max_price;//多仓取小的 空仓取大的容易实现
-
+        const rl = 0.15;//让点
+        const target_price = side === 'LONG' ? price - rl : price + rl;
         if (this.reduce_order_id_string === '') {
           // 没有的话 创建订单并更新
-          return await this.createReduceOrder(side, size, price - 0.15);
+          return await this.createReduceOrder(side, size, target_price);
         }
         else {
           // 有的话 直接修改
-          return await this.updateReduceOrder(side, size, price - 0.15);
+          return await this.updateReduceOrder(side, size, target_price);
         }
       }
       else {
