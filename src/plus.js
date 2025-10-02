@@ -225,7 +225,8 @@ class SocketClient {
     // 获得模拟服务器仓位 只关心 方向 价格 数量
     if (this.pos) {
       const { side, size, avgPrice: price, reduceCount, addCount, reduce_conf, sub_price_avg, sub_price, entryPrice, add_conf } = this.pos;
-      const add_sub = add_conf[0];
+      const add_sub = add_conf[0] === 0 ? 200 : add_conf[0];
+
       const add_size = add_conf[1];
       const add_price = side === 'LONG' ? entryPrice - add_sub : entryPrice + add_sub;
       return { side, size, price: Number(price).toFixed(2), zy: reduce_conf.at(reduceCount), reduceCount, addCount, entryPrice, sub_price_avg, sub_price, add_price, add_size };
@@ -418,7 +419,7 @@ class SocketClient {
         await this.clearOrders();
       }
 
-      console.log(`模拟仓位: ${side} ${Number(old_price).toFixed(2)} ${remote_size} ${add_conf} 补仓:${addCount}次`);
+      console.log(`模拟仓位: ${side} 补仓价:${Number(old_price).toFixed(2)} ${remote_size} ${add_conf} 补仓:${addCount}次`);
       const can_open_flag = side === 'LONG' ? this.indicators.can_open_long_flag : this.indicators.can_open_short_flag;
       if (local_pos === null) {
         // 本地无仓位 这里判断null 是为了区别于网络获取失败的时候结果的undefined
@@ -453,7 +454,10 @@ class SocketClient {
         // 本地有仓位 浮亏 准备补仓
         // 得到模拟仓位的加仓价格、加仓配置、加仓次数 算出应该的补仓价格、补仓数量
         const { add_price: price, add_size } = remote_pos;
-        if (add_size > 0 && this.indicators.can_add_flag === true && addCount < 2) {
+        const local_size = Math.abs(Number(local_pos.size));
+        const remote_size = remote_pos.size * this.scale;
+
+        if (add_size > 0 && this.indicators.can_add_flag === true && local_size <= remote_size) {
           const size = add_size * this.scale;
           console.log(`第${addCount}次补仓 ${side} ${size} ==> ${price}`);
           if (this.add_order_id_string === '') {
