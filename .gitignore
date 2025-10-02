@@ -30,3 +30,5 @@ coverage/
 # Mac / Linux / Windows 杂项
 .DS_Store
 Thumbs.db
+
+runtime.json

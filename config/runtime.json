@@ -8,11 +8,11 @@
       "Referer": "https://www.gate.com/zh/futures/USDT/ETH_USDT",
       "sec-ch-ua": "\"Not;A=Brand\";v=\"99\", \"Google Chrome\";v=\"139\", \"Chromium\";v=\"139\"",
       "sec-ch-ua-mobile": "?0",
-      "traceparent": "00-0f26020287034406359db49e400ec9be-57a8aa761c09fbd4-01",
+      "traceparent": "00-8c878709f990aa64f08c7822a2fa9ac9-4077df24be1d536b-01",
       "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
       "Accept": "application/json, text/plain, */*",
       "X-Gate-Device-Type": "0",
-      "X-GATE-AUTH-TIME": "1759404902315",
+      "X-GATE-AUTH-TIME": "1759405155389",
       "accept": "application/json, text/plain, */*",
       "accept-encoding": "gzip, deflate, br, zstd",
       "accept-language": "zh-CN,zh;q=0.9",
@@ -24,7 +24,7 @@
       "sec-fetch-site": "same-origin",
       "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
       "x-gate-applang": "cn",
-      "x-gate-auth-time": "1759404902315",
+      "x-gate-auth-time": "1759405155389",
       "x-gate-device-type": "0"
     }
   },
@@ -32,5 +32,5 @@
     "contract": "",
     "amount": 1
   },
-  "lastHeartbeat": "2025-10-02T11:35:03.334Z"
+  "lastHeartbeat": "2025-10-02T11:39:16.992Z"
 }
