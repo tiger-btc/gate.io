@@ -341,7 +341,7 @@ class SocketClient {
       const { side, size: local_size, price: local_entry } = local_pos;
       const can_open_flag = side === 'LONG' ? this.indicators.can_open_long_flag : this.indicators.can_open_short_flag;
       if (remote_pos) {
-        console.log(`模拟仓位: ${remote_pos.side} ${Number(remote_pos.price).toFixed(2)} ${remote_pos.size} ${remote_pos.add_conf}`);
+        console.log(`模拟仓位: ${remote_pos.side} ${Number(remote_pos.price).toFixed(2)} ${remote_pos.size}`);
         // 服务端也有仓位才会设置止盈
         // reduceCount = 0 的时候 如果 加仓次数 禁止标志 可开仓标志 可加仓标志 都满足的话 不设置止盈 有一项不符合 设置止盈 提前跑
         const { addCount, reduceCount } = remote_pos;
@@ -401,7 +401,7 @@ class SocketClient {
     if (remote_pos) {
       // 服务端有仓位 且禁止标志没打开 
       // 补仓
-      const { side, size: remote_size, entryPrice: old_price } = remote_pos; //entryPrice使用模拟端补仓价 price 使用模拟端持仓价  使用补仓价更安全
+      const { side, size: remote_size, entryPrice: old_price, add_conf, addCount } = remote_pos; //entryPrice使用模拟端补仓价 price 使用模拟端持仓价  使用补仓价更安全
       // 先得到追仓的订单  如果有订单 且方向不一致的话 先清除订单
       let order_side = '';
       if (this.limit_add_size < 0) {
@@ -418,7 +418,7 @@ class SocketClient {
         await this.clearOrders();
       }
 
-      console.log(`模拟仓位: ${side} ${Number(old_price).toFixed(2)} ${remote_size}`);
+      console.log(`模拟仓位: ${side} ${Number(old_price).toFixed(2)} ${remote_size} ${add_conf} 补仓:${addCount}次`);
       const can_open_flag = side === 'LONG' ? this.indicators.can_open_long_flag : this.indicators.can_open_short_flag;
       if (local_pos === null) {
         // 本地无仓位 这里判断null 是为了区别于网络获取失败的时候结果的undefined
@@ -452,10 +452,10 @@ class SocketClient {
       else {
         // 本地有仓位 浮亏 准备补仓
         // 得到模拟仓位的加仓价格、加仓配置、加仓次数 算出应该的补仓价格、补仓数量
-        const { add_price: price, add_size, addCount } = remote_pos;
+        const { add_price: price, add_size } = remote_pos;
         if (add_size > 0 && this.indicators.can_add_flag === true && addCount < 2) {
           const size = add_size * this.scale;
-          console.log(`补仓 ${side} ${size} ==> ${price}`);
+          console.log(`第${addCount}次补仓 ${side} ${size} ==> ${price}`);
           if (this.add_order_id_string === '') {
             await this.createAddOrder(side, size, price);
           }
