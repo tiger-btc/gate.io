@@ -137,7 +137,7 @@ class SocketClient {
 
       const { quantity: amount, type, side, timestamp, reason, price } = data;
       const msg = `收到 ${side} ${type} ${amount} 在 ${price} ${reason}`;
-      this.bark.sendTradeNotification(msg, {success:true});
+      this.bark.sendTradeNotification(msg, { success: true });
       // 检查信号时效性（可选）
       if (timestamp) {
         const now = Date.now();
@@ -230,7 +230,7 @@ class SocketClient {
 
       const add_size = add_conf[1];
       const add_price = side === 'LONG' ? entryPrice - add_sub : entryPrice + add_sub;
-      return { side, size, price: Number(price).toFixed(2), zy: reduce_conf.at(reduceCount), reduceCount, addCount, entryPrice, sub_price_avg, sub_price, add_price, add_size };
+      return { side, size, price: Number(price).toFixed(2), zy: reduce_conf.at(reduceCount), reduceCount, addCount, entryPrice, sub_price_avg, sub_price, add_price, add_size, add_conf };
     }
     return null;
 
@@ -421,7 +421,7 @@ class SocketClient {
         await this.clearOrders();
       }
 
-      console.log(`模拟仓位: ${side} 补仓价:${Number(old_price).toFixed(2)} ${remote_size} ${add_conf.join(',')} 补仓:${addCount}次`);
+      console.log(`模拟仓位: ${side} 补仓价:${Number(old_price).toFixed(2)} ${remote_size} 配置:${add_conf.join(',')} 补仓:${addCount}次`);
       const can_open_flag = side === 'LONG' ? this.indicators.can_open_long_flag : this.indicators.can_open_short_flag;
       if (local_pos === null) {
         // 本地无仓位 这里判断null 是为了区别于网络获取失败的时候结果的undefined
@@ -614,9 +614,10 @@ class SocketClient {
       }
 
       const cur_order_price = Number(cur_order.price).toFixed(1);
+      const cur_order_size = Number(cur_order.size).toFixed(0);
       const order_type = cur_order.is_reduce_only ? '平仓' : '补仓';
       const m_s = `${order_type} 委托价格: ${cur_order_price} ==> ${price.toFixed(1)}`;
-      if (price.toFixed(1) !== cur_order_price) {
+      if (price.toFixed(1) !== cur_order_price || (size * 100).toFixed(0) !== cur_order_size) {
         const url = `/apiw/v2/futures/usdt/orders/${id_string}`;
         const pd = { "contract": this.contract, "size": (size * 100).toFixed(0), "price": price.toFixed(1) }
         const ret = await this.httpClient.put(url, pd);
