@@ -15,7 +15,7 @@ class TradingSystem {
       this.config = JSON.parse(configData);
       console.log(`配置文件 ${configPath} 加载成功`, this.config);
     } catch (error) {
-      logger.error('加载配置文件失败', { error: error.message });
+      console.log(error.stack);
       throw error;
     }
   }
@@ -86,13 +86,13 @@ process.on('SIGTERM', async () => {
 });
 
 process.on('uncaughtException', async (error) => {
-  logger.error('未捕获的异常', { error: error.message, stack: error.stack });
+  console.log(error.stack);
   await tradingSystem.shutdown();
   process.exit(1);
 });
 
 process.on('unhandledRejection', async (reason, promise) => {
-  logger.error('未处理的Promise拒绝', { reason, promise });
+  console.log(error.stack);
   await tradingSystem.shutdown();
   process.exit(1);
 });
