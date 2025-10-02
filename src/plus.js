@@ -341,7 +341,7 @@ class SocketClient {
       const { side, size: local_size, price: local_entry } = local_pos;
       const can_open_flag = side === 'LONG' ? this.indicators.can_open_long_flag : this.indicators.can_open_short_flag;
       if (remote_pos) {
-        console.log(`模拟仓位: ${remote_pos.side} ${Number(remote_pos.price).toFixed(2)} ${remote_pos.size}`);
+        console.log(`模拟仓位: ${remote_pos.side} ${Number(remote_pos.price).toFixed(2)} ${remote_pos.size} ${remote_pos.add_conf}`);
         // 服务端也有仓位才会设置止盈
         // reduceCount = 0 的时候 如果 加仓次数 禁止标志 可开仓标志 可加仓标志 都满足的话 不设置止盈 有一项不符合 设置止盈 提前跑
         const { addCount, reduceCount } = remote_pos;
@@ -452,8 +452,8 @@ class SocketClient {
       else {
         // 本地有仓位 浮亏 准备补仓
         // 得到模拟仓位的加仓价格、加仓配置、加仓次数 算出应该的补仓价格、补仓数量
-        const { add_price: price, add_size } = remote_pos;
-        if (add_size && this.indicators.can_add_flag === true) {
+        const { add_price: price, add_size, addCount } = remote_pos;
+        if (add_size > 0 && this.indicators.can_add_flag === true && addCount < 2) {
           const size = add_size * this.scale;
           console.log(`补仓 ${side} ${size} ==> ${price}`);
           if (this.add_order_id_string === '') {
@@ -483,8 +483,8 @@ class SocketClient {
       const local_pos = await this.getLocalPosition();
       const remote_pos = this.getRemotePosition();
       if (remote_pos) {
-        console.log('\n');
         // 模拟有仓位
+
         const { sub_price_avg, sub_price } = remote_pos;
         console.log(`入场价差 ${sub_price.toFixed(2)} 持仓价差 ${sub_price_avg.toFixed(2)}`);
 
@@ -498,8 +498,8 @@ class SocketClient {
           // 浮盈 设置减仓
           console.log(`持仓价差 ${sub_price_avg.toFixed(2)} 考虑减仓`);
           await this.set_reduce(local_pos, remote_pos);
-
         }
+        oldLog('\n\n');
       }
       else {
         // 模拟无仓位 考虑减仓
