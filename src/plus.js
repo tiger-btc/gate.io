@@ -604,12 +604,12 @@ class SocketClient {
 
       const cur_order_price = Number(cur_order.price).toFixed(1);
       const order_type = cur_order.is_reduce_only ? '平仓' : '补仓';
-      console.log(`当前${order_type}委托价格: ${cur_order_price} ==> ${price.toFixed(1)}`);
+      const m_s = `${order_type} 委托价格: ${cur_order_price} ==> ${price.toFixed(1)}`;
       if (price.toFixed(1) !== cur_order_price) {
         const url = `/apiw/v2/futures/usdt/orders/${id_string}`;
         const pd = { "contract": this.contract, "size": (size * 100).toFixed(0), "price": price.toFixed(1) }
         const ret = await this.httpClient.put(url, pd);
-        const msg = `修改${order_type}委托 ${ret.message}`;
+        const msg = `修改${m_s} ${ret.message}`;
         console.log(msg);
         this.send_to_phone(msg);
         return ret;
