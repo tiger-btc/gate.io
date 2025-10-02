@@ -259,7 +259,8 @@ class SocketClient {
             side,
             size: Math.abs(size) / 100,
             price: Number(entry_price).toFixed(2),
-            fee: Math.abs(pnl_fee)
+            fee: Math.abs(pnl_fee),
+            mark_price
           }
           this.local_pos_cache = pos;
           return pos;
@@ -456,8 +457,11 @@ class SocketClient {
         const { add_price: price, add_size } = remote_pos;
         const local_size = Math.abs(Number(local_pos.size));
         const remote_size = remote_pos.size * this.scale;
+        const price_ok = side === 'LONG' ? local_pos.mark_price > price : local_pos.mark_price < price;
+        // 开多的时候 加仓的价格必须比当前价格要低
+        // 开空的时候 加仓的价格必须比当前价格要高
 
-        if (add_size > 0 && this.indicators.can_add_flag === true && local_size <= remote_size) { 
+        if (add_size > 0 && this.indicators.can_add_flag === true && local_size <= remote_size && price_ok) { 
           //要对比仓位大小,不然会出现本地现价单成交了 但是模拟端没成交 就会不停的成交
           const size = add_size * this.scale;
           console.log(`第${addCount}次补仓 ${side} ${size} ==> ${price}`);
