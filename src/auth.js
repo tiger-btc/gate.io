@@ -10,9 +10,9 @@ class TradingSystem {
   // 加载配置
   async loadConfig() {
     try {
-      const configPath = path.join('./config/default.json');
+      const configPath = './config/default.json';
       const configData = readJsonFromFileSync(configPath);
-      this.config = JSON.parse(configData);
+      this.config = configData;
       console.log(`配置文件 ${configPath} 加载成功`, this.config);
     } catch (error) {
       console.log(error.stack);

@@ -5,7 +5,7 @@
   "main": "src/app.js",
   "type": "commonjs",
   "scripts": {
-    "auth": "node src/app.js",
+    "auth": "node src/auth.js",
     "cal": "node src/cal.js",
     "plus": "node --inspect=127.0.0.1:9239 src/plus.js",
     "dev": "nodemon src/app.js",

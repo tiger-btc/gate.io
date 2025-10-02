@@ -1,6 +1,6 @@
 const express = require('express');
-const { saveJsonToFileSync } = require('../modules/json');
-
+const { saveJsonToFileSync, readJsonFromFileSync } = require('../modules/json');
+const { getTokenExpiryInfoFromCookie } = require('../modules/bear');
 class ConfigApi {
   constructor() {
     this.app = express();
@@ -10,7 +10,6 @@ class ConfigApi {
 
     this.setupMiddleware();
     this.setupRoutes();
-    this.startHeartbeatMonitor();
   }
 
   // 设置中间件
@@ -125,6 +124,8 @@ class ConfigApi {
       throw new Error('Missing headers or baseURL in data');
     }
 
+
+
     // 更新心跳时间
     this.lastHeartbeat = new Date().toISOString();
 
@@ -134,17 +135,20 @@ class ConfigApi {
       baseURL: data.baseURL,
       headers: data.headers
     };
+
+
     runtimeConfig.lastHeartbeat = this.lastHeartbeat;
 
     await this.saveRuntimeConfig(runtimeConfig);
 
-    // 更新HTTP客户端配置
-    this.httpClient.updateConfig(data.baseURL, data.headers);
+    const expire_msg = getTokenExpiryInfoFromCookie(data.headers.cookie);
+    const { remainingDays } = expire_msg;
 
     console.log('Header配置已更新', {
       baseURL: data.baseURL,
       headersCount: Object.keys(data.headers).length,
-      heartbeat: this.lastHeartbeat
+      heartbeat: this.lastHeartbeat,
+      remainingDays
     });
 
     return {
@@ -204,8 +208,8 @@ class ConfigApi {
   // 加载运行时配置
   async loadRuntimeConfig() {
     try {
-      const data = await fs.readFile(this.runtimeConfigPath, 'utf8');
-      return JSON.parse(data);
+      const data = readJsonFromFileSync(this.runtimeConfigPath);
+      return data;
     } catch (error) {
       console.log(error.stack);
       return {

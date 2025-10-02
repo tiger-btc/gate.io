@@ -1,5 +1,4 @@
 const HttpClient = require('./modules/httpClient');
-const { getTokenExpiryInfoFromCookie } = require('./modules/bear');
 const logger = require('./modules/logger');
 const { io } = require('socket.io-client');
 const { readJsonFromFileSync } = require('./modules/json');
@@ -339,6 +338,7 @@ class SocketClient {
           // 可加仓标志不符合了 止盈跑
           // 减仓次数超过1次 止盈跑
           need_quit = true;
+          console.log('感知到危险,提前跑');
         }
         const size = need_quit ? local_size : local_size / 2; // 情况不对的时候跑全部 其他的时候跑一半
         const price_1 = this.getLimitPriceByPos({ ...local_pos, size });
@@ -462,7 +462,7 @@ class SocketClient {
     // 设置限价单 取得本地仓位 设置止盈单
     this.last_t = Date.now();
     try {
-      
+
       const local_pos = await this.getLocalPosition();
       const remote_pos = this.getRemotePosition();
       if (remote_pos) {
@@ -575,7 +575,7 @@ class SocketClient {
       // 多单无法改成空单 空单无法改成多单 但是同向可以改
       const cur_order = this.local_order_cache.filter(e => e.id_string === id_string).at(0);
       if (!cur_order) {
-        console.error('传入订单编号与实际不符,请尽快处理');
+        console.error(`传入订单编号 ${id_string} 查找不到,请尽快处理`);
         return false;
       }
 
@@ -686,11 +686,6 @@ class SocketClient {
         const { baseURL, headers } = conf;
         this.scale = trading.amount;
         this.httpClient.updateConfig(baseURL, headers);
-        const expire_msg = getTokenExpiryInfoFromCookie(headers.cookie);
-        const { remainingDays } = expire_msg;
-        if (is_first || remainingDays < 2) {
-          console.log(expire_msg);
-        }
       }
     } catch (error) {
       logger.error(error.stack);

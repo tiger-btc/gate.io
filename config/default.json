@@ -5,12 +5,6 @@
     "maxReconnectAttempts": 9999,
     "scale": 0.01
   },
-  "system": {
-    "logLevel": "info",
-    "apiTimeout": 10000,
-    "accountQueryInterval": 10000,
-    "heartbeatInterval": 60000
-  },
   "notification": {
     "barkUrl": "https://api.day.app/6tjZpMmTUvzWxcQTf7DNAH",
     "enabled": true,
