@@ -1,0 +1,19 @@
+{
+  "accept": "application/json, text/plain, */*",
+  "accept-language": "zh-CN,zh;q=0.9",
+  "baggage": "sentry-environment=production,sentry-release=-YegMQZipsEXcyRhYV4K8,sentry-public_key=49348d5eaee2418db953db695c5c9c57,sentry-trace_id=7a8b6712f709469d8faad6d0140642a4,sentry-sample_rate=0.1,sentry-transaction=%2F%5B...routerMarket%5D,sentry-sampled=false",
+  "csrftoken": "4654526372476c38587855546d4737652f33324e4e6a45466e78586b48685050616145547535447366366c69566e47627737723856786a4d4c6e386332647a53",
+  "priority": "u=1, i",
+  "referer": "https://www.gate.com/zh/futures/USDT/BTC_USDT",
+  "sec-ch-ua": "\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"",
+  "sec-ch-ua-mobile": "?0",
+  "sec-ch-ua-platform": "\"Windows\"",
+  "sec-fetch-dest": "empty",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-site": "same-origin",
+  "sentry-trace": "7a8b6712f709469d8faad6d0140642a4-98ea9cb97f9bf9d5-0",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
+  "x-gate-applang": "cn",
+  "x-gate-device-type": "0",
+  "cookie": "_ga=GA1.2.129534826.1750897466; _gac_UA-1833997-40=1.1750897466.EAIaIQobChMIyIS5pemNjgMVldUWBR2UyzWNEAAYASAAEgJyAfD_BwE; ref_uid=VLNHXVLEBQ; ref_type=NaN; afUserId=92e70324-eb4f-4475-b577-1a217262e5ad-p; _dx_uzZo5y=45269ac8dc9b28d7632c99dc953eaba0883d3a0da00c7de0fc12ca66a8547ab4c7872dae; AF_SYNC=1750897467822; _fbp=fb.1.1750897478197.60507213228299013; uid=29022261; nickname=bigtiger.win%40gmail.com; is_on=1; pver_ws=24b2e6c82d27a41307d69b84d9fa35a6; csrftoken=4654526372476c38587855546d4737652f33324e4e6a45466e78586b48685050616145547535447366366c69566e47627737723856786a4d4c6e386332647a53; token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NTA4OTc0ODcsImlwIjoiYjNpSmM2alpSay9YQU91ODZpRVFJalhzS3ZRdEMwUkUxZkppbFQzYmxIZ1ZpU0xLRVdKYVQ4OD0iLCJpcFJlc3RyaWN0IjoiV3ZoUE83NUNSWlFHakdBbHpncGVRd0ZDc0dWRVlFNWtORjBVbkljPSIsImRldmljZVR5cGUiOiJ5YzlmOWkvajRpalJWNnkxaDBZWkEwenh1eFpPUXVpTXJ2YzMxK3M9IiwiZGV2aWNlSWQiOiJKNFNoMkdra3pkZUcxbmlEWXVqTHRSV1p2OWxZc0J5bEczN2Vidz09IiwidWlkIjoiRHlGR21hM2dPYXhzWTUwUGtScDRtZkZ0VCttVWJwcWhnQ3dzaWVJVkdheHc4SlF6In0.U_9rpFnbWtIaKF_WIvOs7iJnNan1x2agsMyPLBIjvco; token_type=Bearer; _ga_JNHPQJS9Q4=GS2.2.s1750897467$o1$g1$t1750897492$j35$l0$h0; lang=cn; lasturl=%2Ffutures%2FUSDT%2FBTC_USDT; finger_print=686005fcW5cVhLvXaQGiJc885NzU9Ci2RjE9f5W1; login_notice_check=%2F"
+}

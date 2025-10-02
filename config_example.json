@@ -1,0 +1,22 @@
+{
+  "socket": {
+    "url": "ws://localhost:3001",     // 改为您的Socket.IO服务器地址
+    "reconnectDelay": 5000,
+    "maxReconnectAttempts": 10
+  },
+  "system": {
+    "logLevel": "info",
+    "apiTimeout": 10000,
+    "accountQueryInterval": 10000,    // 每10秒查询一次账户
+    "heartbeatInterval": 60000
+  },
+  "notification": {
+    "barkUrl": "https://api.day.app/YOUR_BARK_KEY",  // 替换为您的Bark Key
+    "enabled": true,                  // 如果不需要通知设为false
+    "title": "交易系统告警"
+  },
+  "api": {
+    "port": 3000,                     // API服务端口
+    "host": "localhost"
+  }
+}

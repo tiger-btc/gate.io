@@ -1,0 +1,38 @@
+{
+  "api": {
+    "baseURL": "https://www.gate.com",
+    "headers": {
+      "X-Gate-AppLang": "cn",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "csrftoken": "4654526372476c38587855546d4737652f33324e4e6a50434e4349566874335966765772317a30434b6f74314943727142486a58733275364f43707833455456",
+      "Referer": "https://www.gate.com/zh/futures/USDT/BTC_USDT",
+      "sec-ch-ua": "\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "baggage": "sentry-environment=production,sentry-release=el6JL2CLGGeAAx7XsHtu2,sentry-public_key=49348d5eaee2418db953db695c5c9c57,sentry-trace_id=6ff4813f975f46228fd583708f58522a,sentry-sample_rate=0.1,sentry-transaction=%2F%5B...routerMarket%5D,sentry-sampled=false",
+      "sentry-trace": "6ff4813f975f46228fd583708f58522a-b71632231cebb05d-0",
+      "traceparent": "00-7a293553232be28977c36b85eb73b653-5aee5347095ca9f9-01",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
+      "Accept": "application/json, text/plain, */*",
+      "X-Gate-Device-Type": "0",
+      "X-GATE-AUTH-TIME": "1753939129651",
+      "accept": "application/json, text/plain, */*",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "zh-CN,zh;q=0.9",
+      "cookie": "lang=cn; _ga=GA1.2.2127963582.1753575260; _gid=GA1.2.878238838.1753575260; afUserId=6888133a-8b21-4389-816a-0a0c90c24a3d-p; AF_SYNC=1753575261757; _dx_uzZo5y=1e3d20280140874e7675d12972dccb23d11d08624cf07744a716bac09934b22347de0fb2; uid=29022261; nickname=bigtiger.win%40gmail.com; is_on=1; pver_ws=24b2e6c82d27a41307d69b84d9fa35a6; csrftoken=4654526372476c38587855546d4737652f33324e4e6a50434e4349566874335966765772317a30434b6f74314943727142486a58733275364f43707833455456; token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NTM1NzUyODcsImlwIjoibDc3cy9wcGJESkFyL1ZLL2MzcVcwRzEvQjM0WEhUdGVDOUJlQ3pyam1Gd3ZkWG5NdHZ1bGJUYz0iLCJpcFJlc3RyaWN0IjoiOFhxa3VyNVU4TkRQdjEvNmtKTVYyN0FWbWcyNnBHNjBtMjlTUFVZPSIsImRldmljZVR5cGUiOiJLRFlSRUFnRjI3U3pZaDBYTXU1VEQzUkNKV2lXdXRZcTN6UGFDaE09IiwiZGV2aWNlSWQiOiJNdW00by9rMlhiaEpNeWpxdmlNRVZzSFVYRHdqTHBGMzZoc3VmZz09IiwidWlkIjoiamE5V2t1YzFVcktYU2d5RE1SS3NZaGZ4eGtqT1RhaHMvSXdBNDIxMlliUU9wVFE4In0.i_94ZDbF8lcf2ukdA6xcZ8xSxEHkTRA5338oG7oBusA; token_type=Bearer; login_notice_check=%2F; b_notify=1; lasturl=%2Ffutures%2FUSDT%2FBTC_USDT; finger_print=688abe8e0JlJvtpjYMeMEJa48L1c9weXn6nEWUf1; RT=\"z=1&dm=www.gate.com&si=d3f07ae8-973d-4ded-ac3b-787c39912482&ss=mdpwpvr6&sl=2u&tt=16dt&obo=2t&rl=1\"; _ga_JNHPQJS9Q4=GS2.2.s1753794263$o2$g1$t1753938842$j60$l0$h0",
+      "priority": "u=1, i",
+      "referer": "https://www.gate.com/zh/futures/USDT/BTC_USDT",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
+      "x-gate-applang": "cn",
+      "x-gate-auth-time": "1753939129651",
+      "x-gate-device-type": "0"
+    }
+  },
+  "trading": {
+    "contract": "",
+    "amount": 1
+  },
+  "lastHeartbeat": "2025-07-31T05:18:50.173Z"
+}

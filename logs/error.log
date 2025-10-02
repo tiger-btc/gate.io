@@ -1,0 +1,26 @@
+{"level":"error","message":"start","timestamp":"2025-10-01 21:13:25.475"}
+{"level":"error","message":"start","timestamp":"2025-10-01 21:18:17.082"}
+{"level":"error","message":"start","timestamp":"2025-10-02 08:55:01.638"}
+{"level":"error","message":"start","timestamp":"2025-10-02 09:11:35.410"}
+{"level":"error","message":"start","timestamp":"2025-10-02 09:44:33.246"}
+{"level":"error","message":"start","timestamp":"2025-10-02 09:45:19.711"}
+{"level":"error","message":"start","timestamp":"2025-10-02 16:24:04.988"}
+{"level":"error","message":"start","timestamp":"2025-10-02 16:29:11.299"}
+{"data":{"avgPrice":4385.695,"fee":2.1928475,"id":"trade_1759393800390_gwfdc01u0","price":4385.695,"quantity":1,"reason":"策略开 空","side":"SHORT","timestamp":1759393800390,"type":"OPEN"},"error":"size is not defined","es":"ReferenceError: size is not defined\n    at SocketClient.handleTradeSignal (/root/gate.io/src/plus.js:144:41)\n    at Socket.<anonymous> (/root/gate.io/src/plus.js:99:20)\n    at Emitter.emit (/root/gate.io/node_modules/@socket.io/component-emitter/lib/cjs/index.js:143:20)\n    at Socket.emitEvent (/root/gate.io/node_modules/socket.io-client/build/cjs/socket.js:559:20)\n    at Socket.onevent (/root/gate.io/node_modules/socket.io-client/build/cjs/socket.js:546:18)\n    at Socket.onpacket (/root/gate.io/node_modules/socket.io-client/build/cjs/socket.js:514:22)\n    at Emitter.emit (/root/gate.io/node_modules/@socket.io/component-emitter/lib/cjs/index.js:143:20)\n    at /root/gate.io/node_modules/socket.io-client/build/cjs/manager.js:246:18\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)","level":"error","message":"处理交易信号时发生错误","timestamp":"2025-10-02 16:30:00.396"}
+{"level":"error","message":"start","timestamp":"2025-10-02 16:32:37.505"}
+{"level":"error","message":"start","timestamp":"2025-10-02 16:36:46.089"}
+{"level":"error","message":"ReferenceError: updateLimitOrder is not defined\n    at SocketClient.updateReduceOrder (/root/gate.io/src/plus.js:598:19)\n    at SocketClient.set_reduce (/root/gate.io/src/plus.js:358:29)\n    at SocketClient.go (/root/gate.io/src/plus.js:480:22)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async SocketClient.updateAuth (/root/gate.io/src/plus.js:704:9)\n    at async Timeout._onTimeout (/root/gate.io/src/plus.js:42:7)","timestamp":"2025-10-02 16:37:46.330"}
+{"level":"error","message":"ReferenceError: updateLimitOrder is not defined\n    at SocketClient.updateReduceOrder (/root/gate.io/src/plus.js:598:19)\n    at SocketClient.set_reduce (/root/gate.io/src/plus.js:358:29)\n    at SocketClient.go (/root/gate.io/src/plus.js:480:22)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async SocketClient.updateAuth (/root/gate.io/src/plus.js:704:9)\n    at async Timeout._onTimeout (/root/gate.io/src/plus.js:42:7)","timestamp":"2025-10-02 16:37:52.331"}
+{"level":"error","message":"start","timestamp":"2025-10-02 16:38:35.638"}
+{"level":"error","message":"start","timestamp":"2025-10-02 16:42:14.635"}
+{"level":"error","message":"start","timestamp":"2025-10-02 16:44:59.546"}
+{"level":"error","message":"ReferenceError: add_order_id_string is not defined\n    at SocketClient.set_add (/root/gate.io/src/plus.js:446:41)\n    at SocketClient.go (/root/gate.io/src/plus.js:475:22)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async SocketClient.updateAuth (/root/gate.io/src/plus.js:705:9)\n    at async Timeout._onTimeout (/root/gate.io/src/plus.js:42:7)","timestamp":"2025-10-02 16:45:11.726"}
+{"level":"error","message":"ReferenceError: add_order_id_string is not defined\n    at SocketClient.set_add (/root/gate.io/src/plus.js:446:41)\n    at SocketClient.go (/root/gate.io/src/plus.js:475:22)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async SocketClient.updateAuth (/root/gate.io/src/plus.js:705:9)\n    at async Timeout._onTimeout (/root/gate.io/src/plus.js:42:7)","timestamp":"2025-10-02 16:45:17.751"}
+{"level":"error","message":"start","timestamp":"2025-10-02 16:46:53.732"}
+{"level":"error","message":"start","timestamp":"2025-10-02 16:49:22.173"}
+{"level":"error","message":"start","timestamp":"2025-10-02 16:50:48.241"}
+{"level":"error","message":"start","timestamp":"2025-10-02 17:05:13.971"}
+{"level":"error","message":"start","timestamp":"2025-10-02 17:41:58.475"}
+{"level":"error","message":"start","timestamp":"2025-10-02 17:43:29.419"}
+{"level":"error","message":"start","timestamp":"2025-10-02 17:45:06.056"}
+{"level":"error","message":"start","timestamp":"2025-10-02 17:46:33.147"}

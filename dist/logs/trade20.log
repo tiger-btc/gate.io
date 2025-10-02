@@ -1,0 +1,865 @@
+{"asset":"USDT","available":"2093.634297789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:06:22.177","total":"3015.341118","unrealised_pnl":"-1.76"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:06:26.897","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:06:26.900"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:06:26.899Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:06:26.902"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:06:31.698","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:06:31.701"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:06:31.699Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:06:31.702"}
+{"asset":"USDT","available":"2092.042367789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:06:32.181","total":"3010.698008","unrealised_pnl":"-4.52"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:06:33.898","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:06:33.900"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:06:33.899Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:06:33.902"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:06:37.652","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:06:37.655"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:06:37.653Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:06:37.656"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:06:41.231","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:06:41.235"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:06:41.232Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:06:41.236"}
+{"asset":"USDT","available":"2092.449152789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:06:42.182","total":"3012.895703","unrealised_pnl":"-2.9"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:06:46.798","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:06:46.801"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:06:46.799Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:06:46.802"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:06:50.526","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:06:50.528"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:06:50.526Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:06:50.529"}
+{"asset":"USDT","available":"2094.708102789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:06:52.166","total":"3016.702353","unrealised_pnl":"-1.5"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:06:54.222","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:06:54.224"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:06:54.223Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:06:54.225"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:06:57.728","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:06:57.732"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:06:57.731Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:06:57.733"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:07:01.602","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:07:01.605"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:07:01.603Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:07:01.606"}
+{"asset":"USDT","available":"2097.675627789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:07:02.168","total":"3023.318028","unrealised_pnl":"1.8"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:07:04.799","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:07:04.802"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:07:04.801Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:07:04.803"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:07:09.739","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:07:09.742"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:07:09.741Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:07:09.743"}
+{"asset":"USDT","available":"2099.024502789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:07:12.166","total":"3026.325153","unrealised_pnl":"3.3"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:07:13.426","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:07:13.428"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:07:13.427Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:07:13.429"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:07:16.894","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:07:16.896"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:07:16.895Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:07:16.898"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:07:20.368","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:07:20.371"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:07:20.369Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:07:20.372"}
+{"asset":"USDT","available":"2099.434202789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:07:22.172","total":"3027.177053","unrealised_pnl":"3.7"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:07:25.049","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:07:25.051"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:07:25.049Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:07:25.052"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:07:30.297","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:07:30.301"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:07:30.298Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:07:30.303"}
+{"asset":"USDT","available":"2984.820547789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:07:32.175","total":"2984.820548","unrealised_pnl":"0"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:07:34.195","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:07:34.197"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:07:34.196Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:07:34.198"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:07:37.015","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:07:37.018"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:07:37.016Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:07:37.019"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:07:39.617","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:07:39.620"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:07:39.618Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:07:39.621"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:07:40.892","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:07:40.895"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:07:40.894Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:07:40.896"}
+{"asset":"USDT","available":"2096.573747789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:07:42.175","total":"2096.573748","unrealised_pnl":"0"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:07:43.169","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:07:43.172"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:07:43.170Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:07:43.173"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:07:48.496","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:07:48.499"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:07:48.497Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:07:48.500"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:07:51.739","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:07:51.743"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:07:51.741Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:07:51.745"}
+{"asset":"USDT","available":"2096.573747789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:07:52.167","total":"2096.573748","unrealised_pnl":"0"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:07:53.953","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:07:53.955"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:07:53.953Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:07:53.956"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:07:58.894","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:07:58.899"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:07:58.896Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:07:58.901"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:08:02.095","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:08:02.102"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:08:02.097Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:08:02.104"}
+{"asset":"USDT","available":"2096.573747789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:08:02.180","total":"2096.573748","unrealised_pnl":"0"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:08:05.327","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:08:05.334"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:08:05.329Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:08:05.336"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:08:09.426","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:08:09.428"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:08:09.426Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:08:09.429"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:08:11.998","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:08:12.007"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:08:11.999Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:08:12.008"}
+{"asset":"USDT","available":"2096.573747789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:08:12.173","total":"2096.573748","unrealised_pnl":"0"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:08:16.146","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:08:16.149"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:08:16.148Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:08:16.151"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:08:20.029","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:08:20.031"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:08:20.030Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:08:20.032"}
+{"asset":"USDT","available":"2096.573747789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:08:22.198","total":"2096.573748","unrealised_pnl":"0"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:08:22.740","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:08:22.743"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:08:22.741Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:08:22.744"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:08:26.799","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:08:26.802"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:08:26.801Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:08:26.803"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:08:29.747","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:08:29.750"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:08:29.749Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:08:29.751"}
+{"asset":"USDT","available":"2096.573747789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:08:32.162","total":"2096.573748","unrealised_pnl":"0"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:08:33.996","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:08:34.000"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:08:33.998Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:08:34.001"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:08:36.555","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:08:36.557"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:08:36.556Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:08:36.559"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:08:40.161","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:08:40.163"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:08:40.162Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:08:40.164"}
+{"asset":"USDT","available":"2096.573747789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:08:42.207","total":"2096.573748","unrealised_pnl":"0"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:08:43.799","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:08:43.802"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:08:43.800Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:08:43.803"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:08:47.399","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:08:47.402"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:08:47.401Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:08:47.404"}
+{"asset":"USDT","available":"2096.573747789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:08:52.167","total":"2096.573748","unrealised_pnl":"0"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:08:52.511","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:08:52.514"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:08:52.512Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:08:52.515"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:08:53.512","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:08:53.515"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:08:53.514Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:08:53.516"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:08:58.492","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:08:58.495"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:08:58.494Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:08:58.496"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:09:01.917","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:09:01.919"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:09:01.918Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:09:01.922"}
+{"asset":"USDT","available":"2096.573747789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:09:02.188","total":"2096.573748","unrealised_pnl":"0"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:09:04.532","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:09:04.534"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:09:04.533Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:09:04.535"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:09:08.498","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:09:08.501"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:09:08.499Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:09:08.502"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:09:11.103","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:09:11.105"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:09:11.103Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:09:11.107"}
+{"asset":"USDT","available":"2097.251537039014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:09:12.181","total":"2236.306399","unrealised_pnl":"0.513"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:09:17.093","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:09:17.095"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:09:17.094Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:09:17.097"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:09:19.822","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:09:19.825"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:09:19.823Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:09:19.826"}
+{"asset":"USDT","available":"2102.056307789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:09:22.170","total":"3026.192308","unrealised_pnl":"0.8"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:09:22.703","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:09:22.707"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:09:22.704Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:09:22.709"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:09:23.800","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:09:23.803"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:09:23.802Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:09:23.805"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:09:27.737","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:09:27.740"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:09:27.738Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:09:27.742"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:09:29.765","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:09:29.768"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:09:29.766Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:09:29.769"}
+{"asset":"USDT","available":"2102.150262789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:09:32.183","total":"3026.352593","unrealised_pnl":"0.86"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:09:34.095","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:09:34.097"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:09:34.096Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:09:34.099"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:09:38.155","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:09:38.157"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:09:38.156Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:09:38.159"}
+{"asset":"USDT","available":"2102.286157789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:09:42.179","total":"3026.643258","unrealised_pnl":"1"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:09:43.401","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:09:43.404"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:09:43.402Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:09:43.405"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:09:45.208","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:09:45.211"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:09:45.209Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:09:45.212"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:09:48.699","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:09:48.703"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:09:48.702Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:09:48.705"}
+{"asset":"USDT","available":"2102.865632789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:09:52.166","total":"3027.996583","unrealised_pnl":"1.7"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:09:53.853","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:09:53.856"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:09:53.855Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:09:53.858"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:09:56.000","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:09:56.002"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:09:56.001Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:09:56.003"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:10:00.148","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:10:00.150"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:10:00.149Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:10:00.152"}
+{"asset":"USDT","available":"2101.112727789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:10:02.168","total":"3024.629648","unrealised_pnl":"0.24"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:10:03.547","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:10:03.550"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:10:03.548Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:10:03.551"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:10:08.132","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:10:08.134"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:10:08.133Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:10:08.135"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:10:11.809","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:10:11.813"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:10:11.811Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:10:11.814"}
+{"asset":"USDT","available":"2103.275332789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:10:12.174","total":"3028.848483","unrealised_pnl":"2.1"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:10:14.017","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:10:14.019"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:10:14.018Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:10:14.020"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:10:18.502","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:10:18.507"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:10:18.504Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:10:18.510"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:10:21.627","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:10:21.630"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:10:21.629Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:10:21.631"}
+{"asset":"USDT","available":"2103.764882789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:10:22.174","total":"3030.001333","unrealised_pnl":"2.7"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:10:25.597","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:10:25.599"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:10:25.597Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:10:25.600"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:10:28.462","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:10:28.465"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:10:28.464Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:10:28.466"}
+{"asset":"USDT","available":"2103.994732789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:10:32.168","total":"3030.452283","unrealised_pnl":"2.9"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:10:33.844","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:10:33.847"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:10:33.846Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:10:33.849"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:10:35.685","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:10:35.688"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:10:35.686Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:10:35.689"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:10:40.406","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:10:40.409"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:10:40.408Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:10:40.410"}
+{"asset":"USDT","available":"2104.034657789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:10:42.175","total":"3030.602758","unrealised_pnl":"3"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:10:43.804","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:10:43.807"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:10:43.805Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:10:43.808"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:10:47.421","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:10:47.424"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:10:47.423Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:10:47.425"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:10:51.858","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:10:51.860"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:10:51.859Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:10:51.861"}
+{"asset":"USDT","available":"2105.023832789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:10:52.166","total":"3032.807983","unrealised_pnl":"4.1"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:10:54.010","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:10:54.023"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:10:54.011Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:10:54.025"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:10:57.555","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:10:57.559"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:10:57.557Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:10:57.560"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:11:00.540","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:11:00.542"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:11:00.540Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:11:00.543"}
+{"asset":"USDT","available":"2103.986297789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:11:02.173","total":"3031.085038","unrealised_pnl":"3.48"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:11:04.325","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:11:04.328"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:11:04.325Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:11:04.329"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:11:09.322","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:11:09.325"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:11:09.323Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:11:09.326"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:11:11.630","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:11:11.632"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:11:11.631Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:11:11.634"}
+{"asset":"USDT","available":"2100.962352789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:11:12.178","total":"3025.032023","unrealised_pnl":"0.74"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:11:16.501","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:11:16.504"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:11:16.501Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:11:16.505"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:11:19.038","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:11:19.041"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:11:19.040Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:11:19.042"}
+{"asset":"USDT","available":"2100.942952789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:11:22.167","total":"3024.128223","unrealised_pnl":"-0.06"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:11:23.754","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:11:23.757"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:11:23.755Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:11:23.758"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:11:27.291","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:11:27.293"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:11:27.291Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:11:27.294"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:11:31.032","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:11:31.038"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:11:31.035Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:11:31.040"}
+{"asset":"USDT","available":"2099.448482789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:11:32.323","total":"3020.378533","unrealised_pnl":"-2.1"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:11:34.827","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:11:34.829"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:11:34.828Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:11:34.830"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:11:37.806","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:11:37.810"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:11:37.807Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:11:37.811"}
+{"asset":"USDT","available":"2099.408557789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:11:42.204","total":"3020.228058","unrealised_pnl":"-2.2"}
+{"asset":"USDT","available":"2098.812962789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:11:52.175","total":"3019.035493","unrealised_pnl":"-2.74"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:12:01.545","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":26,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:12:01.549"}
+{"baseURL":"https://www.gate.com","headersCount":26,"heartbeat":"2025-10-02T08:12:01.546Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:12:01.551"}
+{"asset":"USDT","available":"2098.779082789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:12:02.207","total":"3018.824733","unrealised_pnl":"-2.9"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:12:03.019","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":26,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:12:03.021"}
+{"baseURL":"https://www.gate.com","headersCount":26,"heartbeat":"2025-10-02T08:12:03.020Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:12:03.023"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:12:09.012","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":26,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:12:09.014"}
+{"baseURL":"https://www.gate.com","headersCount":26,"heartbeat":"2025-10-02T08:12:09.013Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:12:09.016"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:12:11.751","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":26,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:12:11.753"}
+{"baseURL":"https://www.gate.com","headersCount":26,"heartbeat":"2025-10-02T08:12:11.752Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:12:11.755"}
+{"asset":"USDT","available":"2099.628332789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:12:12.183","total":"3020.779483","unrealised_pnl":"-1.9"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:12:18.608","url":"/api","userAgent":"axios/1.10.0"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:12:18.609","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":26,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:12:18.612"}
+{"baseURL":"https://www.gate.com","headersCount":26,"heartbeat":"2025-10-02T08:12:18.611Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:12:18.614"}
+{"baseURL":"https://www.gate.com","headersCount":26,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:12:18.615"}
+{"baseURL":"https://www.gate.com","headersCount":26,"heartbeat":"2025-10-02T08:12:18.611Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:12:18.616"}
+{"asset":"USDT","available":"2094.889767789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:12:22.176","total":"3010.977728","unrealised_pnl":"-6.48"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:12:22.304","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":26,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:12:22.308"}
+{"baseURL":"https://www.gate.com","headersCount":26,"heartbeat":"2025-10-02T08:12:22.306Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:12:22.310"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:12:25.199","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":26,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:12:25.202"}
+{"baseURL":"https://www.gate.com","headersCount":26,"heartbeat":"2025-10-02T08:12:25.200Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:12:25.203"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:12:29.428","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":26,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:12:29.430"}
+{"baseURL":"https://www.gate.com","headersCount":26,"heartbeat":"2025-10-02T08:12:29.429Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:12:29.431"}
+{"asset":"USDT","available":"2095.491782789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:12:32.186","total":"3011.557633","unrealised_pnl":"-6.5"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:12:32.712","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:12:32.715"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:12:32.713Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:12:32.716"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:12:37.344","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:12:37.346"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:12:37.345Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:12:37.348"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:12:40.845","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:12:40.849"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:12:40.847Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:12:40.851"}
+{"asset":"USDT","available":"2095.491782789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:12:42.182","total":"3011.557633","unrealised_pnl":"-6.5"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:12:44.927","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:12:44.930"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:12:44.928Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:12:44.931"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:12:48.110","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:12:48.113"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:12:48.111Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:12:48.114"}
+{"asset":"USDT","available":"2095.541782789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:12:52.176","total":"3011.607633","unrealised_pnl":"-6.5"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:12:53.398","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:12:53.401"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:12:53.399Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:12:53.403"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:12:55.198","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:12:55.200"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:12:55.199Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:12:55.201"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:12:58.304","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:12:58.306"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:12:58.305Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:12:58.307"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:13:01.812","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:13:01.815"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:13:01.814Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:13:01.816"}
+{"asset":"USDT","available":"2095.451857789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:13:02.244","total":"3011.407158","unrealised_pnl":"-6.6"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:13:05.168","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:13:05.170"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:13:05.169Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:13:05.172"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:13:10.406","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:13:10.410"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:13:10.409Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:13:10.412"}
+{"asset":"USDT","available":"2094.912307789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:13:12.184","total":"3010.204308","unrealised_pnl":"-7.2"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:13:13.801","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:13:13.803"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:13:13.802Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:13:13.804"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:13:17.498","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:13:17.501"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:13:17.499Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:13:17.502"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:13:20.597","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:13:20.600"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:13:20.598Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:13:20.601"}
+{"asset":"USDT","available":"2094.912307789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:13:22.172","total":"3010.204308","unrealised_pnl":"-7.2"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:13:24.495","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:13:24.498"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:13:24.496Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:13:24.499"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:13:28.334","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:13:28.339"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:13:28.336Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:13:28.341"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:13:31.740","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:13:31.742"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:13:31.741Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:13:31.743"}
+{"asset":"USDT","available":"2094.142907789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:13:32.187","total":"3008.550508","unrealised_pnl":"-8"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:13:35.841","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:13:35.845"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:13:35.842Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:13:35.846"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:13:39.091","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:13:39.093"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:13:39.092Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:13:39.094"}
+{"asset":"USDT","available":"2091.933582789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:13:42.175","total":"3005.346233","unrealised_pnl":"-8.9"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:13:42.944","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:13:42.947"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:13:42.944Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:13:42.948"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:13:46.213","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:13:46.215"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:13:46.214Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:13:46.217"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:13:50.612","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:13:50.615"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:13:50.614Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:13:50.616"}
+{"asset":"USDT","available":"2093.383582789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:13:52.197","total":"3006.796233","unrealised_pnl":"-8.9"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:13:53.532","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:13:53.534"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:13:53.533Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:13:53.536"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:13:58.125","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:13:58.128"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:13:58.127Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:13:58.129"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:14:01.417","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:14:01.422"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:14:01.418Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:14:01.424"}
+{"asset":"USDT","available":"2092.842907789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:14:02.182","total":"3007.250508","unrealised_pnl":"-8"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:14:06.236","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:14:06.239"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:14:06.236Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:14:06.240"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:14:10.423","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:14:10.426"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:14:10.424Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:14:10.427"}
+{"asset":"USDT","available":"2092.977912789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:14:12.191","total":"3005.904143","unrealised_pnl":"-9.34"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:14:14.400","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:14:14.403"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:14:14.402Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:14:14.404"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:14:17.705","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:14:17.708"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:14:17.707Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:14:17.709"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:14:20.817","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:14:20.820"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:14:20.818Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:14:20.821"}
+{"asset":"USDT","available":"2091.578662789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:14:22.199","total":"3003.399393","unrealised_pnl":"-10.34"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:14:24.114","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:14:24.117"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:14:24.115Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:14:24.119"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:14:27.810","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:14:27.813"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:14:27.812Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:14:27.815"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:14:30.998","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:14:31.000"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:14:30.999Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:14:31.001"}
+{"asset":"USDT","available":"2091.284707789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:14:32.176","total":"3003.039108","unrealised_pnl":"-10.4"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:14:35.133","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:14:35.135"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:14:35.134Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:14:35.137"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:14:38.193","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:14:38.195"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:14:38.194Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:14:38.197"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:14:42.168","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:14:42.171"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:14:42.170Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:14:42.172"}
+{"asset":"USDT","available":"2091.153217789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:14:42.175","total":"3002.155878","unrealised_pnl":"-11.08"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:14:46.797","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:14:46.801"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:14:46.799Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:14:46.803"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:14:50.479","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:14:50.497"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:14:50.480Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:14:50.498"}
+{"asset":"USDT","available":"2089.434567789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:14:52.179","total":"2998.447328","unrealised_pnl":"-12.88"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:14:53.055","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:14:53.057"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:14:53.056Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:14:53.058"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:14:56.710","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:14:56.713"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:14:56.710Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:14:56.714"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:15:00.658","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:15:00.661"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:15:00.659Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:15:00.662"}
+{"asset":"USDT","available":"2089.556732789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:15:02.187","total":"2998.326283","unrealised_pnl":"-13.1"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:15:03.814","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:15:03.817"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:15:03.815Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:15:03.818"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:15:06.800","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:15:06.803"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:15:06.801Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:15:06.804"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:15:10.961","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:15:10.963"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:15:10.962Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:15:10.964"}
+{"asset":"USDT","available":"2091.265307789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:15:12.195","total":"3002.135308","unrealised_pnl":"-11.2"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:15:14.811","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:15:14.814"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:15:14.813Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:15:14.815"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:15:18.306","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:15:18.308"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:15:18.307Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:15:18.310"}
+{"asset":"USDT","available":"2091.214932789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:15:22.177","total":"3002.637683","unrealised_pnl":"-10.7"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:15:22.297","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:15:22.299"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:15:22.298Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:15:22.301"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:15:25.991","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:15:25.993"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:15:25.992Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:15:25.995"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:15:29.618","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:15:29.621"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:15:29.619Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:15:29.622"}
+{"asset":"USDT","available":"2089.322477789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:15:32.184","total":"2998.467898","unrealised_pnl":"-12.76"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:15:33.095","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:15:33.097"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:15:33.096Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:15:33.098"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:15:37.695","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:15:37.698"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:15:37.696Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:15:37.700"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:15:42.029","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:15:42.032"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:15:42.030Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:15:42.033"}
+{"asset":"USDT","available":"2087.237332789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:15:42.170","total":"2995.122483","unrealised_pnl":"-13.9"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:15:43.834","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:15:43.838"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:15:43.835Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:15:43.839"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:15:47.791","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:15:47.794"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:15:47.792Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:15:47.796"}
+{"asset":"USDT","available":"2087.930022789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:15:52.216","total":"2994.798113","unrealised_pnl":"-14.82"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:15:53.249","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:15:53.252"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:15:53.251Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:15:53.253"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:15:55.864","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:15:55.866"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:15:55.865Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:15:55.867"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:15:59.339","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:15:59.341"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:15:59.340Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:15:59.343"}
+{"asset":"USDT","available":"2088.779422789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:16:02.209","total":"2996.531913","unrealised_pnl":"-14.02"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:16:02.293","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:16:02.296"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:16:02.295Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:16:02.298"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:16:05.493","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:16:05.496"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:16:05.494Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:16:05.497"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:16:10.851","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:16:10.854"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:16:10.852Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:16:10.855"}
+{"asset":"USDT","available":"2088.037332789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:16:12.186","total":"2995.922483","unrealised_pnl":"-13.9"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:16:13.218","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:16:13.221"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:16:13.220Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:16:13.223"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:16:16.724","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:16:16.727"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:16:16.725Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:16:16.728"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:16:21.255","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:16:21.257"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:16:21.256Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:16:21.258"}
+{"asset":"USDT","available":"2090.595907789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:16:22.179","total":"3000.581508","unrealised_pnl":"-12"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:16:24.884","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:16:24.887"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:16:24.886Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:16:24.888"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:16:28.856","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:16:28.859"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:16:28.857Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:16:28.860"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:16:30.793","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:16:30.796"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:16:30.794Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:16:30.797"}
+{"asset":"USDT","available":"2090.326132789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:16:32.174","total":"2999.980083","unrealised_pnl":"-12.3"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:16:35.799","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:16:35.802"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:16:35.800Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:16:35.803"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:16:39.098","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:16:39.101"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:16:39.099Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:16:39.102"}
+{"asset":"USDT","available":"2091.625007789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:16:42.198","total":"3002.937208","unrealised_pnl":"-10.8"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:16:43.476","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:16:43.479"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:16:43.477Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:16:43.480"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:16:46.618","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:16:46.621"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:16:46.618Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:16:46.622"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:16:49.355","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:16:49.357"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:16:49.356Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:16:49.359"}
+{"asset":"USDT","available":"2092.304482789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:16:52.192","total":"3004.390533","unrealised_pnl":"-10.1"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:16:52.652","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:16:52.655"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:16:52.653Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:16:52.656"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:16:55.744","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:16:55.746"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:16:55.745Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:16:55.748"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:16:59.668","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:16:59.671"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:16:59.668Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:16:59.672"}
+{"asset":"USDT","available":"2094.232832789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:17:02.181","total":"3008.750983","unrealised_pnl":"-7.9"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:17:03.259","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:17:03.263"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:17:03.261Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:17:03.265"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:17:07.615","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:17:07.617"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:17:07.616Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:17:07.619"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:17:11.557","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:17:11.559"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:17:11.558Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:17:11.560"}
+{"asset":"USDT","available":"2093.125522789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:17:12.176","total":"3006.626613","unrealised_pnl":"-8.82"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:17:14.438","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:17:14.440"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:17:14.439Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:17:14.441"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:17:18.107","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:17:18.109"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:17:18.108Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:17:18.110"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:17:21.003","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:17:21.006"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:17:21.005Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:17:21.007"}
+{"asset":"USDT","available":"2095.222007789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:17:22.181","total":"3010.956208","unrealised_pnl":"-6.8"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:17:24.869","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:17:24.871"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:17:24.869Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:17:24.872"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:17:27.867","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:17:27.870"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:17:27.869Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:17:27.871"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:17:31.694","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:17:31.697"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:17:31.696Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:17:31.698"}
+{"asset":"USDT","available":"2095.182082789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:17:32.194","total":"3010.805733","unrealised_pnl":"-6.9"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:17:35.071","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:17:35.074"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:17:35.072Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:17:35.075"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:17:39.567","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:17:39.570"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:17:39.569Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:17:39.571"}
+{"asset":"USDT","available":"2096.070882789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:17:42.180","total":"3013.463333","unrealised_pnl":"-5.3"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:17:42.658","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:17:42.660"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:17:42.659Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:17:42.662"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:17:46.642","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:17:46.646"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:17:46.643Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:17:46.647"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:17:51.304","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:17:51.307"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:17:51.305Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:17:51.309"}
+{"asset":"USDT","available":"2097.829832789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:17:52.238","total":"3016.769983","unrealised_pnl":"-3.9"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:17:54.117","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:17:54.119"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:17:54.118Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:17:54.121"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:17:58.096","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:17:58.098"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:17:58.097Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:17:58.100"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:18:00.911","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:18:00.914"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:18:00.912Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:18:00.915"}
+{"asset":"USDT","available":"2098.179457789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:18:02.190","total":"3017.672358","unrealised_pnl":"-3.4"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:18:04.799","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:18:04.802"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:18:04.800Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:18:04.803"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:18:08.643","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:18:08.646"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:18:08.645Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:18:08.648"}
+{"asset":"USDT","available":"2098.419382789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:18:12.207","total":"3018.022833","unrealised_pnl":"-3.3"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:18:12.772","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:18:12.775"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:18:12.773Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:18:12.776"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:18:15.096","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:18:15.098"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:18:15.097Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:18:15.099"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:18:18.806","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:18:18.809"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:18:18.807Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:18:18.810"}
+{"asset":"USDT","available":"2095.921772789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:18:22.182","total":"3014.950363","unrealised_pnl":"-3.82"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:18:22.460","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:18:22.463"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:18:22.461Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:18:22.464"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:18:27.323","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:18:27.326"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:18:27.323Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:18:27.327"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:18:30.429","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:18:30.432"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:18:30.430Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:18:30.433"}
+{"asset":"USDT","available":"2096.168867789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:18:32.202","total":"3013.583428","unrealised_pnl":"-5.28"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:18:33.520","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:18:33.523"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:18:33.521Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:18:33.524"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:18:37.717","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:18:37.719"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:18:37.718Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:18:37.720"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:18:41.483","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:18:41.485"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:18:41.484Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:18:41.486"}
+{"asset":"USDT","available":"2099.358557789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:18:42.191","total":"3020.178058","unrealised_pnl":"-2.2"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:18:44.923","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:18:44.926"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:18:44.925Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:18:44.928"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:18:48.052","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:18:48.054"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:18:48.053Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:18:48.055"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:18:51.092","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:18:51.095"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:18:51.093Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:18:51.096"}
+{"asset":"USDT","available":"2096.581472789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:18:52.183","total":"3016.052263","unrealised_pnl":"-3.42"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:18:54.964","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:18:54.967"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:18:54.965Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:18:54.968"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:18:59.095","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:18:59.097"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:18:59.096Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:18:59.099"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:19:02.045","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:19:02.048"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:19:02.046Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:19:02.049"}
+{"asset":"USDT","available":"2097.274162789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:19:02.187","total":"3015.727893","unrealised_pnl":"-4.34"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:19:06.262","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:19:06.267"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:19:06.265Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:19:06.269"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:19:09.820","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:19:09.823"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:19:09.822Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:19:09.824"}
+{"asset":"USDT","available":"2097.529832789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:19:12.192","total":"3016.469983","unrealised_pnl":"-3.9"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:19:13.094","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:19:13.096"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:19:13.095Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:19:13.097"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:19:18.152","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:19:18.155"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:19:18.154Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:19:18.156"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:19:20.798","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:19:20.800"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:19:20.799Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:19:20.801"}
+{"asset":"USDT","available":"2096.840657789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:19:22.184","total":"3014.564758","unrealised_pnl":"-5"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:19:23.810","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:19:23.813"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:19:23.811Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:19:23.814"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:19:28.715","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:19:28.717"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:19:28.716Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:19:28.719"}
+{"asset":"USDT","available":"2097.829832789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:19:32.203","total":"3016.769983","unrealised_pnl":"-3.9"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:19:32.305","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:19:32.309"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:19:32.307Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:19:32.312"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:19:35.258","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:19:35.260"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:19:35.259Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:19:35.261"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:19:39.686","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:19:39.688"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:19:39.687Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:19:39.689"}
+{"asset":"USDT","available":"2098.459307789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:19:42.189","total":"3018.173308","unrealised_pnl":"-3.2"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:19:42.747","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:19:42.758"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:19:42.748Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:19:42.759"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:19:46.595","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:19:46.598"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:19:46.597Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:19:46.599"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:19:50.708","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:19:50.711"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:19:50.709Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:19:50.712"}
+{"asset":"USDT","available":"2098.459307789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:19:52.203","total":"3018.173308","unrealised_pnl":"-3.2"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:19:53.219","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:19:53.221"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:19:53.220Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:19:53.223"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:19:58.008","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:19:58.011"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:19:58.010Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:19:58.012"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:20:00.933","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:20:00.935"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:20:00.933Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:20:00.936"}
+{"asset":"USDT","available":"2097.829832789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:20:02.197","total":"3016.769983","unrealised_pnl":"-3.9"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:20:04.119","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:20:04.122"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:20:04.121Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:20:04.124"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:20:08.064","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:20:08.066"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:20:08.065Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:20:08.067"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:20:11.162","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:20:11.164"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:20:11.163Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:20:11.166"}
+{"asset":"USDT","available":"2099.318632789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:20:12.194","total":"3020.027583","unrealised_pnl":"-2.3"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:20:14.871","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:20:14.873"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:20:14.872Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:20:14.875"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:20:18.220","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:20:18.222"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:20:18.221Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:20:18.223"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:20:21.952","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:20:21.955"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:20:21.953Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:20:21.957"}
+{"asset":"USDT","available":"2099.070647789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:20:22.251","total":"3019.757488","unrealised_pnl":"-2.32"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:20:26.095","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:20:26.098"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:20:26.097Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:20:26.099"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:20:29.998","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:20:30.001"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:20:29.999Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:20:30.003"}
+{"asset":"USDT","available":"2103.994732789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:20:32.197","total":"3030.452283","unrealised_pnl":"2.9"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:20:33.444","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:20:33.448"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:20:33.445Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:20:33.450"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:20:37.727","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:20:37.729"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:20:37.728Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:20:37.730"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:20:40.392","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:20:40.394"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:20:40.393Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:20:40.396"}
+{"asset":"USDT","available":"2103.145997789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:20:42.192","total":"3030.686938","unrealised_pnl":"3.88"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:20:45.201","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:20:45.203"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:20:45.202Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:20:45.204"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:20:48.003","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:20:48.005"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:20:48.004Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:20:48.007"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:20:51.402","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:20:51.405"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:20:51.404Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:20:51.407"}
+{"asset":"USDT","available":"2102.933392789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:20:52.188","total":"3028.418103","unrealised_pnl":"2.02"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:20:55.303","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:20:55.305"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:20:55.303Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:20:55.306"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:20:58.853","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:20:58.856"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:20:58.855Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:20:58.857"}
+{"asset":"USDT","available":"2105.203682789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:21:02.184","total":"3033.208933","unrealised_pnl":"4.3"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:21:02.463","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:21:02.465"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:21:02.463Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:21:02.466"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:21:06.045","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:21:06.047"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:21:06.046Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:21:06.048"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:21:09.060","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:21:09.062"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:21:09.060Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:21:09.063"}
+{"asset":"USDT","available":"2105.343607789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:21:12.216","total":"3033.459408","unrealised_pnl":"4.4"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:21:12.350","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:21:12.352"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:21:12.350Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:21:12.353"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:21:17.297","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:21:17.302"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:21:17.299Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:21:17.303"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:21:20.797","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:21:20.801"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:21:20.800Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:21:20.803"}
+{"asset":"USDT","available":"2105.793232789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:21:22.190","total":"3034.461783","unrealised_pnl":"4.9"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:21:23.741","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:21:23.744"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:21:23.743Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:21:23.745"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:21:26.808","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:21:26.831"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:21:26.811Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:21:26.832"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:21:30.313","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:21:30.316"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:21:30.314Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:21:30.317"}
+{"asset":"USDT","available":"2987.318867789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:21:32.196","total":"2987.318868","unrealised_pnl":"0"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:21:33.701","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:21:33.703"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:21:33.702Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:21:33.704"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:21:34.457","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:21:34.460"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:21:34.458Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:21:34.461"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:21:36.662","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":24,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:21:36.666"}
+{"baseURL":"https://www.gate.com","headersCount":24,"heartbeat":"2025-10-02T08:21:36.663Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:21:36.667"}
+{"asset":"USDT","available":"2987.318867789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:21:42.193","total":"2987.318868","unrealised_pnl":"0"}
+{"asset":"USDT","available":"2987.318867789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:21:52.198","total":"2987.318868","unrealised_pnl":"0"}
+{"asset":"USDT","available":"2987.318867789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:22:02.225","total":"2987.318868","unrealised_pnl":"0"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:22:04.639","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":26,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:22:04.642"}
+{"baseURL":"https://www.gate.com","headersCount":26,"heartbeat":"2025-10-02T08:22:04.640Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:22:04.643"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:22:05.052","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":26,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:22:05.054"}
+{"baseURL":"https://www.gate.com","headersCount":26,"heartbeat":"2025-10-02T08:22:05.053Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:22:05.056"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:22:10.561","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":26,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:22:10.564"}
+{"baseURL":"https://www.gate.com","headersCount":26,"heartbeat":"2025-10-02T08:22:10.563Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:22:10.565"}
+{"asset":"USDT","available":"2987.318867789014","level":"info","message":"ACCOUNT","timestamp":"2025-10-02 16:22:12.210","total":"2987.318868","unrealised_pnl":"0"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:22:12.725","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":26,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:22:12.729"}
+{"baseURL":"https://www.gate.com","headersCount":26,"heartbeat":"2025-10-02T08:22:12.728Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:22:12.731"}
+{"ip":"127.0.0.1","level":"info","message":"API请求","method":"POST","timestamp":"2025-10-02 16:22:16.801","url":"/api","userAgent":"axios/1.10.0"}
+{"baseURL":"https://www.gate.com","headersCount":26,"level":"info","message":"HTTP Client配置已更新","timestamp":"2025-10-02 16:22:16.803"}
+{"baseURL":"https://www.gate.com","headersCount":26,"heartbeat":"2025-10-02T08:22:16.802Z","level":"info","message":"Header配置已更新","timestamp":"2025-10-02 16:22:16.805"}
+{"level":"info","message":"收到SIGINT信号，正在关闭系统...","timestamp":"2025-10-02 16:22:17.731"}
+{"level":"info","message":"正在关闭交易系统...","timestamp":"2025-10-02 16:22:17.732"}
+{"level":"info","message":"账户监控已停止","timestamp":"2025-10-02 16:22:17.734"}
+{"level":"info","message":"心跳监控已停止","timestamp":"2025-10-02 16:22:17.734"}
+{"level":"info","message":"正在断开Socket.IO连接","timestamp":"2025-10-02 16:22:17.735"}
+{"level":"warn","message":"Socket.IO连接断开","reason":"io client disconnect","timestamp":"2025-10-02 16:22:17.737"}
+{"level":"info","message":"NOTIFICATION 通知已发送: 交易系统已关闭","timestamp":"2025-10-02 16:22:18.030","type":"bark_sent"}

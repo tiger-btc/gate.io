@@ -1,0 +1,441 @@
+{
+  "method": "/apiw/v2/futures/usdt/positions",
+  "message": "success",
+  "code": 200,
+  "data": [
+    {
+      "value": "0",
+      "leverage": "0",
+      "mode": "dual_long",
+      "realised_point": "0",
+      "contract": "ETH/USDT",
+      "entry_price": "0",
+      "mark_price": "4131.6",
+      "last_price": "",
+      "history_point": "0",
+      "realised_pnl": "0",
+      "close_order": null,
+      "size": 0,
+      "cross_leverage_limit": "10",
+      "pending_orders": 0,
+      "adl_ranking": 6,
+      "maintenance_rate": "0.05",
+      "unrealised_pnl": "0",
+      "pnl_pnl": "0",
+      "pnl_fee": "0",
+      "pnl_fund": "0",
+      "user": 29022261,
+      "leverage_max": "125",
+      "history_pnl": "-445.52720823999",
+      "risk_limit": "200000000",
+      "margin": "0",
+      "last_close_pnl": "2.69475712",
+      "liq_price": "0",
+      "update_time": 1759131440,
+      "open_time": 0,
+      "update_id": 312,
+      "margin_rate": "0",
+      "position_profit": "0",
+      "future_auto_order": null,
+      "future_plan_order": null,
+      "future_reverse_order": null,
+      "future_trail_order": null,
+      "future_mmr_order": null,
+      "initial_margin": "0",
+      "maintenance_margin": "0",
+      "trade_max_size": "0",
+      "risk_limit_table": "ETH_USDT_202501161434",
+      "tiers": [
+        {
+          "tier": 1,
+          "risk_limit": "200000",
+          "initial_rate": "0.008",
+          "maintenance_rate": "0.004",
+          "leverage_max": "125",
+          "deduction": "0"
+        },
+        {
+          "tier": 2,
+          "risk_limit": "250000",
+          "initial_rate": "0.008333",
+          "maintenance_rate": "0.0041",
+          "leverage_max": "120",
+          "deduction": "20"
+        },
+        {
+          "tier": 3,
+          "risk_limit": "300000",
+          "initial_rate": "0.008474",
+          "maintenance_rate": "0.0042",
+          "leverage_max": "118",
+          "deduction": "45"
+        },
+        {
+          "tier": 4,
+          "risk_limit": "350000",
+          "initial_rate": "0.008695",
+          "maintenance_rate": "0.0043",
+          "leverage_max": "115",
+          "deduction": "75"
+        },
+        {
+          "tier": 5,
+          "risk_limit": "500000",
+          "initial_rate": "0.009009",
+          "maintenance_rate": "0.0045",
+          "leverage_max": "111",
+          "deduction": "145"
+        },
+        {
+          "tier": 6,
+          "risk_limit": "700000",
+          "initial_rate": "0.009523",
+          "maintenance_rate": "0.0047",
+          "leverage_max": "105",
+          "deduction": "245"
+        },
+        {
+          "tier": 7,
+          "risk_limit": "1500000",
+          "initial_rate": "0.01",
+          "maintenance_rate": "0.005",
+          "leverage_max": "100",
+          "deduction": "455"
+        },
+        {
+          "tier": 8,
+          "risk_limit": "3000000",
+          "initial_rate": "0.013333",
+          "maintenance_rate": "0.0065",
+          "leverage_max": "75",
+          "deduction": "2705"
+        },
+        {
+          "tier": 9,
+          "risk_limit": "5000000",
+          "initial_rate": "0.01515",
+          "maintenance_rate": "0.0075",
+          "leverage_max": "66",
+          "deduction": "5705"
+        },
+        {
+          "tier": 10,
+          "risk_limit": "7000000",
+          "initial_rate": "0.016666",
+          "maintenance_rate": "0.0083",
+          "leverage_max": "60",
+          "deduction": "9705"
+        },
+        {
+          "tier": 11,
+          "risk_limit": "12000000",
+          "initial_rate": "0.02",
+          "maintenance_rate": "0.01",
+          "leverage_max": "50",
+          "deduction": "21605"
+        },
+        {
+          "tier": 12,
+          "risk_limit": "20000000",
+          "initial_rate": "0.025",
+          "maintenance_rate": "0.0125",
+          "leverage_max": "40",
+          "deduction": "51605"
+        },
+        {
+          "tier": 13,
+          "risk_limit": "30000000",
+          "initial_rate": "0.03333",
+          "maintenance_rate": "0.0175",
+          "leverage_max": "30",
+          "deduction": "151605"
+        },
+        {
+          "tier": 14,
+          "risk_limit": "50000000",
+          "initial_rate": "0.04",
+          "maintenance_rate": "0.02",
+          "leverage_max": "25",
+          "deduction": "226605"
+        },
+        {
+          "tier": 15,
+          "risk_limit": "70000000",
+          "initial_rate": "0.05",
+          "maintenance_rate": "0.025",
+          "leverage_max": "20",
+          "deduction": "476605"
+        },
+        {
+          "tier": 16,
+          "risk_limit": "100000000",
+          "initial_rate": "0.06666",
+          "maintenance_rate": "0.04",
+          "leverage_max": "15",
+          "deduction": "1526605"
+        },
+        {
+          "tier": 17,
+          "risk_limit": "200000000",
+          "initial_rate": "0.1",
+          "maintenance_rate": "0.05",
+          "leverage_max": "10",
+          "deduction": "2526605"
+        },
+        {
+          "tier": 18,
+          "risk_limit": "300000000",
+          "initial_rate": "0.2",
+          "maintenance_rate": "0.1",
+          "leverage_max": "5",
+          "deduction": "12526605"
+        },
+        {
+          "tier": 19,
+          "risk_limit": "500000000",
+          "initial_rate": "0.333",
+          "maintenance_rate": "0.15",
+          "leverage_max": "3",
+          "deduction": "27526605"
+        },
+        {
+          "tier": 20,
+          "risk_limit": "1000000000",
+          "initial_rate": "0.5",
+          "maintenance_rate": "0.25",
+          "leverage_max": "2",
+          "deduction": "77526605"
+        },
+        {
+          "tier": 21,
+          "risk_limit": "1500000000",
+          "initial_rate": "0.95",
+          "maintenance_rate": "0.5",
+          "leverage_max": "1.05",
+          "deduction": "327526605"
+        }
+      ],
+      "average_maintenance_rate": "0",
+      "voucher_size": "0",
+      "voucher_margin": "0",
+      "voucher_id": 0
+    },
+    {
+      "value": "23756.7",
+      "leverage": "0",
+      "mode": "dual_short",
+      "realised_point": "0",
+      "contract": "ETH/USDT",
+      "entry_price": "4124.259288537549",
+      "mark_price": "4131.6",
+      "last_price": "4129.9",
+      "history_point": "0",
+      "realised_pnl": "-12.152085090909",
+      "close_order": null,
+      "size": -575,
+      "cross_leverage_limit": "10",
+      "pending_orders": 1,
+      "adl_ranking": 2,
+      "maintenance_rate": "0.05",
+      "unrealised_pnl": "-42.209090909093",
+      "pnl_pnl": "3.834090909091", 
+      "pnl_fee": "-15.986176",
+      "pnl_fund": "0",
+      "user": 29022261,
+      "leverage_max": "125",
+      "history_pnl": "-842.906842689996",
+      "risk_limit": "200000000",
+      "margin": "0",
+      "last_close_pnl": "-133.118476000002",
+      "liq_price": "4637.31",
+      "update_time": 1759138110,
+      "open_time": 1759133700,
+      "update_id": 282,
+      "margin_rate": "26.8913",
+      "position_profit": "-1",
+      "future_auto_order": [],
+      "future_plan_order": [],
+      "future_reverse_order": [],
+      "future_trail_order": null,
+      "future_mmr_order": [],
+      "initial_margin": "2395.2692775",
+      "maintenance_margin": "112.844325",
+      "trade_max_size": "0",
+      "risk_limit_table": "ETH_USDT_202501161434",
+      "tiers": [
+        {
+          "tier": 1,
+          "risk_limit": "200000",
+          "initial_rate": "0.008",
+          "maintenance_rate": "0.004",
+          "leverage_max": "125",
+          "deduction": "0"
+        },
+        {
+          "tier": 2,
+          "risk_limit": "250000",
+          "initial_rate": "0.008333",
+          "maintenance_rate": "0.0041",
+          "leverage_max": "120",
+          "deduction": "20"
+        },
+        {
+          "tier": 3,
+          "risk_limit": "300000",
+          "initial_rate": "0.008474",
+          "maintenance_rate": "0.0042",
+          "leverage_max": "118",
+          "deduction": "45"
+        },
+        {
+          "tier": 4,
+          "risk_limit": "350000",
+          "initial_rate": "0.008695",
+          "maintenance_rate": "0.0043",
+          "leverage_max": "115",
+          "deduction": "75"
+        },
+        {
+          "tier": 5,
+          "risk_limit": "500000",
+          "initial_rate": "0.009009",
+          "maintenance_rate": "0.0045",
+          "leverage_max": "111",
+          "deduction": "145"
+        },
+        {
+          "tier": 6,
+          "risk_limit": "700000",
+          "initial_rate": "0.009523",
+          "maintenance_rate": "0.0047",
+          "leverage_max": "105",
+          "deduction": "245"
+        },
+        {
+          "tier": 7,
+          "risk_limit": "1500000",
+          "initial_rate": "0.01",
+          "maintenance_rate": "0.005",
+          "leverage_max": "100",
+          "deduction": "455"
+        },
+        {
+          "tier": 8,
+          "risk_limit": "3000000",
+          "initial_rate": "0.013333",
+          "maintenance_rate": "0.0065",
+          "leverage_max": "75",
+          "deduction": "2705"
+        },
+        {
+          "tier": 9,
+          "risk_limit": "5000000",
+          "initial_rate": "0.01515",
+          "maintenance_rate": "0.0075",
+          "leverage_max": "66",
+          "deduction": "5705"
+        },
+        {
+          "tier": 10,
+          "risk_limit": "7000000",
+          "initial_rate": "0.016666",
+          "maintenance_rate": "0.0083",
+          "leverage_max": "60",
+          "deduction": "9705"
+        },
+        {
+          "tier": 11,
+          "risk_limit": "12000000",
+          "initial_rate": "0.02",
+          "maintenance_rate": "0.01",
+          "leverage_max": "50",
+          "deduction": "21605"
+        },
+        {
+          "tier": 12,
+          "risk_limit": "20000000",
+          "initial_rate": "0.025",
+          "maintenance_rate": "0.0125",
+          "leverage_max": "40",
+          "deduction": "51605"
+        },
+        {
+          "tier": 13,
+          "risk_limit": "30000000",
+          "initial_rate": "0.03333",
+          "maintenance_rate": "0.0175",
+          "leverage_max": "30",
+          "deduction": "151605"
+        },
+        {
+          "tier": 14,
+          "risk_limit": "50000000",
+          "initial_rate": "0.04",
+          "maintenance_rate": "0.02",
+          "leverage_max": "25",
+          "deduction": "226605"
+        },
+        {
+          "tier": 15,
+          "risk_limit": "70000000",
+          "initial_rate": "0.05",
+          "maintenance_rate": "0.025",
+          "leverage_max": "20",
+          "deduction": "476605"
+        },
+        {
+          "tier": 16,
+          "risk_limit": "100000000",
+          "initial_rate": "0.06666",
+          "maintenance_rate": "0.04",
+          "leverage_max": "15",
+          "deduction": "1526605"
+        },
+        {
+          "tier": 17,
+          "risk_limit": "200000000",
+          "initial_rate": "0.1",
+          "maintenance_rate": "0.05",
+          "leverage_max": "10",
+          "deduction": "2526605"
+        },
+        {
+          "tier": 18,
+          "risk_limit": "300000000",
+          "initial_rate": "0.2",
+          "maintenance_rate": "0.1",
+          "leverage_max": "5",
+          "deduction": "12526605"
+        },
+        {
+          "tier": 19,
+          "risk_limit": "500000000",
+          "initial_rate": "0.333",
+          "maintenance_rate": "0.15",
+          "leverage_max": "3",
+          "deduction": "27526605"
+        },
+        {
+          "tier": 20,
+          "risk_limit": "1000000000",
+          "initial_rate": "0.5",
+          "maintenance_rate": "0.25",
+          "leverage_max": "2",
+          "deduction": "77526605"
+        },
+        {
+          "tier": 21,
+          "risk_limit": "1500000000",
+          "initial_rate": "0.95",
+          "maintenance_rate": "0.5",
+          "leverage_max": "1.05",
+          "deduction": "327526605"
+        }
+      ],
+      "average_maintenance_rate": "0.004",
+      "voucher_size": "0",
+      "voucher_margin": "0",
+      "voucher_id": 0
+    }
+  ]
+}
