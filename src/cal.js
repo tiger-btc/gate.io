@@ -149,7 +149,7 @@ async function main(sd = "2025-09-01", ed = "2025-09-30") {
     net_pnl,
     fy,
     last_pnl } = sum_obj;
-  console.log(`\n${dates.at(0)} - ${dates.at(-1)}  合计:  \n\t账面盈 ${s(n(total_pnl, 2), 10)} 减手续  ${s(n(total_fee), 6)} 净盈利 ${s(n(net_pnl, 2), 10)} + 应返佣 ${s(n(fy), 6)} \n\t终盈利 ${s(n(last_pnl), 6)} 日均盈 ${s(n(last_pnl / rets.length), 6)}\n`);
+  console.log(`\n${dates.at(0)} - ${dates.at(-1)}  合计:  \n\t账面盈${s(n(total_pnl, 2), 10)} 减手续${s(n(total_fee), 6)} 净盈利${s(n(net_pnl, 2), 10)} + 应返佣${s(n(fy), 6)} \n\t终盈利${s(n(last_pnl), 6)} 日均盈${s(n(last_pnl / rets.length), 6)}\n`);
 }
 
 

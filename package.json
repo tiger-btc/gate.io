@@ -6,6 +6,7 @@
   "type": "commonjs",
   "scripts": {
     "auth": "node src/auth.js",
+    "close": "node src/close.js",
     "cal": "node src/cal.js",
     "plus": "node --inspect=127.0.0.1:9239 src/plus.js",
     "dev": "nodemon src/app.js",
