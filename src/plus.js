@@ -441,13 +441,14 @@ class SocketClient {
 
           const size = remote_size * this.scale;
           const add_or_sub = side === 'LONG' ? -1.5 : 1.5;
+          const dir = side === 'SHORT' ? 1 : -1;
           const price = Number(old_price) + add_or_sub; // 这里设置追仓价 为模拟端持仓价 上下5*0.36=1.8左右 数值越追加开仓机会越多 但是太小的话需要考虑滑点带来的伤害
           console.log(`追仓 ${side} ${size} ==> ${price}`);
           if (this.add_order_id_string === '') {
             await this.createAddOrder(side, size, price);
           }
           else {
-            await this.updateLimitOrder(this.add_order_id_string, size, price);
+            await this.updateLimitOrder(this.add_order_id_string, size * dir, price);
           }
 
         }
@@ -476,12 +477,13 @@ class SocketClient {
         if (add_size > 0 && this.indicators.can_add_flag === true && local_size <= remote_size && price_ok) {
           //要对比仓位大小,不然会出现本地现价单成交了 但是模拟端没成交 就会不停的成交
           const size = add_size * this.scale;
+          const dir = side === 'SHORT' ? 1 : -1;
           console.log(`第${addCount}次补仓 ${side} ${size} ==> ${price}`);
           if (this.add_order_id_string === '') {
             await this.createAddOrder(side, size, price);
           }
           else {
-            await this.updateLimitOrder(this.add_order_id_string, size, price);
+            await this.updateLimitOrder(this.add_order_id_string, size * dir, price);
           }
         }
       }
@@ -626,7 +628,8 @@ class SocketClient {
 
       const cur_order_price = Number(cur_order.price).toFixed(1);
       const cur_order_size = Number(cur_order.size).toFixed(0);
-      const order_type = cur_order.is_reduce_only ? '平仓' : '补仓';
+      const cur_order_side = cur_order_size < 0 ? '空' : "多";
+      const order_type = cur_order.is_reduce_only ? `减${cur_order_side}` : `补${cur_order_side}`;
       const m_s = `${order_type} 委托价格: ${cur_order_price} ==> ${price.toFixed(1)}`;
       if (price.toFixed(1) !== cur_order_price || (size * 100).toFixed(0) !== cur_order_size) {
         const url = `/apiw/v2/futures/usdt/orders/${id_string}`;
@@ -634,6 +637,10 @@ class SocketClient {
         const ret = await this.httpClient.put(url, pd);
         const msg = `修改${m_s} ${ret.message}`;
         console.log(msg);
+        if (ret.message !== 'success') {
+          console.log(pd);
+          console.log(ret);
+        }
         this.send_to_phone(msg);
         return ret;
       }
