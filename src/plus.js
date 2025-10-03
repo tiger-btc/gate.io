@@ -236,7 +236,7 @@ class SocketClient {
   getRemotePosition() {
     // 获得模拟服务器仓位 只关心 方向 价格 数量
     if (this.pos) {
-      const { side, size, avgPrice: price, reduceCount, addCount, reduce_conf, sub_price_avg, sub_price, entryPrice, add_conf } = this.pos;
+      const { side, size, avgPrice: price, reduceCount, addCount, reduce_conf, sub_price_avg, sub_price, entryRefPrice: entryPrice, add_conf } = this.pos;
       const add_sub = add_conf[0] === 0 ? 200 : add_conf[0];
 
       const add_size = add_conf[1];
@@ -441,7 +441,7 @@ class SocketClient {
 
           const size = remote_size * this.scale;
           const add_or_sub = side === 'LONG' ? -1.5 : 1.5;
-          const dir = side === 'SHORT' ? 1 : -1;
+          const dir = side === 'SHORT' ? -1 : 1;
           const price = Number(old_price) + add_or_sub; // 这里设置追仓价 为模拟端持仓价 上下5*0.36=1.8左右 数值越追加开仓机会越多 但是太小的话需要考虑滑点带来的伤害
           console.log(`追仓 ${side} ${size} ==> ${price}`);
           if (this.add_order_id_string === '') {
@@ -477,7 +477,7 @@ class SocketClient {
         if (add_size > 0 && this.indicators.can_add_flag === true && local_size <= remote_size && price_ok) {
           //要对比仓位大小,不然会出现本地现价单成交了 但是模拟端没成交 就会不停的成交
           const size = add_size * this.scale;
-          const dir = side === 'SHORT' ? 1 : -1;
+          const dir = side === 'SHORT' ? -1 : 1;
           console.log(`第${addCount}次补仓 ${side} ${size} ==> ${price}`);
           if (this.add_order_id_string === '') {
             await this.createAddOrder(side, size, price);
