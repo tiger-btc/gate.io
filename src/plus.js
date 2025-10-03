@@ -732,7 +732,7 @@ class SocketClient {
         return null
       }
       //console.log('正常更新配置文件');
-      const { api: conf, trading } = readJsonFromFileSync('./dist/runtime.json');
+      const { api: conf, trading } = readJsonFromFileSync('./config/runtime.json');
       if (conf) {
         const { baseURL, headers } = conf;
         this.scale = trading.amount;
