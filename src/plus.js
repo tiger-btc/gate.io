@@ -47,7 +47,8 @@ class SocketClient {
 
   async send_to_phone(msg) {
     if (this.bark) {
-      return await this.bark.sendNotification(msg, 'GATE.IO');
+      const ts = formatTimestamp(Date.now());
+      return await this.bark.sendNotification(`${ts} ${msg}`, 'GATE.IO');
     }
   }
 
@@ -125,7 +126,17 @@ class SocketClient {
       }
 
       if (eventName === 'position:update') {
+        const last_pos = this.pos === null ? {} : { ...this.pos };
         this.pos = args[0].position;
+        if (this.pos) {
+          if (this.pos.sub_price * last_pos.sub_price < 0 || this.pos.sub_price_avg * last_pos.sub_price_avg < 0) {
+            this.send_to_phone('盈 <==> 亏');
+            console.log('盈 <==> 亏');
+            setTimeout(async () => {
+              await this.go();
+            }, 1000);
+          }
+        }
       }
     });
   }
@@ -168,7 +179,7 @@ class SocketClient {
       if (flag) {
         setTimeout(async () => {
           await this.go();
-        }, 1.5 * 1000);
+        }, 2.5 * 1000);
       }
 
 
@@ -283,7 +294,7 @@ class SocketClient {
         only_close_positions: false
       };
       const result = await this.httpClient.post('/apiw/v2/futures/usdt/positions/close_all', closeData);
-      console.log(`${msg} 一键平仓`, result);
+      console.log(`${msg} 一键平仓`, result.message);
       this.send_to_phone('一键平仓');
     } catch (error) {
       logger.error(error.stack);
