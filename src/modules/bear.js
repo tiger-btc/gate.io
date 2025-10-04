@@ -74,4 +74,4 @@ if (require.main === module) {
   console.log(getTokenExpiryInfoFromCookie(cookieStr));
 }
 
-module.exports = { getTokenExpiryInfoFromCookie };
+module.exports = { getTokenExpiryInfoFromCookie,extractCookieValue };

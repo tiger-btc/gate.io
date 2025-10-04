@@ -8,9 +8,10 @@
     "auth": "node src/auth.js",
     "close": "node src/close.js",
     "cal": "node src/cal.js",
-    "plus": "node --inspect=127.0.0.1:9239 src/plus.js",
+    "plus": "node src/plus.js",
+    "pro": "node src/pro.js",
     "dev": "nodemon src/app.js",
-    "test:header": "node scripts/test-push-header.js",
+    "test": "node --inspect=127.0.0.1:9239 src/test.js",
     "test:config": "node scripts/test-push-config.js",
     "test:account": "node scripts/test-account.js",
     "test:all": "node scripts/test-all.js",
@@ -22,7 +23,8 @@
     "axios": "^1.10.0",
     "express": "^4.18.2",
     "socket.io-client": "^4.7.2",
-    "winston": "^3.10.0"
+    "winston": "^3.10.0",
+    "ws": "^8.18.3"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.38.3",
