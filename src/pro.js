@@ -163,6 +163,7 @@ class SocketClient {
 
       if (type === 'CLOSE') {
         // 平仓
+        this.pos = null;
         await oneKeyClose('保险平仓');
       }
 
@@ -317,8 +318,6 @@ class SocketClient {
       // 服务端有仓位 且禁止标志没打开 
       // 补仓
       const { side, entryPrice: old_price, addCount, size: remote_size } = remote_pos; //entryPrice使用模拟端补仓价 price 使用模拟端持仓价  使用补仓价更安全
-
-
       console.log(`模拟仓位: ${side} ${remote_size} 补仓:${addCount}次 补仓价:${Number(old_price).toFixed(2)}`);
       const can_open_flag = side === 'LONG' ? this.indicators.can_open_long_flag : this.indicators.can_open_short_flag;
       if (local_pos === null) {
