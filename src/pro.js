@@ -148,6 +148,9 @@ class SocketClient {
         await updateOrder('add', side, size, price);
       }
       if (type === 'ADD' || type === 'REDUCE') {
+        setTimeout(async () => {
+          await this.go();
+        }, 1500);
       }
 
       if (type === 'CLOSE') {
@@ -190,10 +193,10 @@ class SocketClient {
     if (this.pos) {
       const { side, size, avgPrice: price, reduceCount, addCount, reduce_conf, sub_price_avg, sub_price, entryRefPrice: entryPrice, add_conf } = this.pos;
       const add_sub = add_conf[0] === 0 ? 200 : add_conf[0];
-      const reduce_sub = reduce_conf[0] === 0 ? 6 : reduce_conf[0];
+      const reduce_sub = reduce_conf.at(reduceCount) === 0 ? 6 : reduce_conf.at(reduceCount);
       const add_size = add_conf[1];
       const add_price = side === 'LONG' ? entryPrice - add_sub : entryPrice + add_sub; // 补仓价格用加仓价格
-      const reduce_size = reduce_conf[1];
+      const reduce_size = size / (reduceCount + 1);
       const reduce_price = side === 'LONG' ? price + reduce_sub : price - reduce_sub; // 减仓价格用均价
 
       return {
@@ -259,7 +262,7 @@ class SocketClient {
       const { side, size: local_size, price: local_entry } = local_pos;
       const can_open_flag = side === 'LONG' ? this.indicators.can_open_long_flag : this.indicators.can_open_short_flag;
       if (remote_pos) {
-        console.log(`模拟仓位: ${remote_pos.side} 均价:${Number(remote_pos.price).toFixed(2)} 数量:${remote_pos.size}`);
+        console.log(`模拟仓位: ${remote_pos.side} ${Number(remote_pos.price).toFixed(2)} ${remote_pos.size}`);
         // 服务端也有仓位才会设置止盈
         // reduceCount = 0 的时候 如果 加仓次数 禁止标志 可开仓标志 可加仓标志 都满足的话 不设置止盈 有一项不符合 设置止盈 提前跑
         const { addCount, reduceCount } = remote_pos;
@@ -276,7 +279,7 @@ class SocketClient {
         }
         const size = need_quit ? local_size : local_size / 2; // 情况不对的时候跑全部 其他的时候跑一半
         const price_1 = this.getLimitPriceByPos({ ...local_pos, size });
-        console.log(`本地止盈 ${Math.abs(price_1 - Number(local_entry)).toFixed(2)}`, price_1.toFixed(2));
+        console.log(`本地止盈 ${Math.abs(price_1 - Number(local_entry)).toFixed(2)} 点`, price_1.toFixed(2));
         const price_2 = remote_pos.reduce_price;
         console.log(`模拟止盈 ${remote_pos.zy} 点`, price_2);
         const min_price = price_1 > price_2 ? price_2 : price_1;
@@ -303,10 +306,10 @@ class SocketClient {
     if (remote_pos) {
       // 服务端有仓位 且禁止标志没打开 
       // 补仓
-      const { side, entryPrice: old_price, add_conf, addCount, size: remote_size } = remote_pos; //entryPrice使用模拟端补仓价 price 使用模拟端持仓价  使用补仓价更安全
+      const { side, entryPrice: old_price, addCount, size: remote_size } = remote_pos; //entryPrice使用模拟端补仓价 price 使用模拟端持仓价  使用补仓价更安全
 
 
-      console.log(`模拟仓位: ${side} 补仓价:${Number(old_price).toFixed(2)} ${remote_size} 配置:${add_conf.join(',')} 补仓:${addCount}次`);
+      //console.log(`模拟仓位: ${side} 补仓价:${Number(old_price).toFixed(2)} ${remote_size}  补仓:${addCount}次`);
       const can_open_flag = side === 'LONG' ? this.indicators.can_open_long_flag : this.indicators.can_open_short_flag;
       if (local_pos === null) {
         // 本地无仓位 这里判断null 是为了区别于网络获取失败的时候结果的undefined
@@ -396,10 +399,13 @@ class SocketClient {
 
 if (require.main === module) {
   global.socket = new SocketClient();
+  socket.get = get;
   const callback = function () {
     global.socket.go();
   }
-  setCallBack(callback);
+  //setCallBack(callback);
+  //setTimeout(callback, 1000);
+  setInterval(callback, 1000);
 }
 module.exports = SocketClient;
 

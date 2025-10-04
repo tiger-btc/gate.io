@@ -32,11 +32,13 @@ let callback = null;
 
 const httpClient = new HttpClient();
 
-const oldLog = console.log;
-console.log = (...args) => {
-    const ts = formatTimestamp(Date.now());
-    oldLog(`[${ts}]`, ...args);
-};
+if (require.main === module) {
+    const oldLog = console.log;
+    console.log = (...args) => {
+        const ts = formatTimestamp(Date.now());
+        oldLog(`[${ts}]`, ...args);
+    };
+}
 
 async function httpGetOrders() {
     // http方式获得订单列表，刚进入程序的时候使用一次即可 后续使用ws更新
@@ -104,6 +106,7 @@ async function delOrder(id_string) {
         const pd = null
         const ret = await httpClient.delete(url, pd);
         if (ret.message === 'success') {
+            console.log(`删除订单 ${id_string} ${ret.message}`);
             return true;
         } else {
             console.log(`删除订单 ${id_string} ${ret.message}`);
@@ -146,7 +149,8 @@ async function equalOrder(type, side, size, price) {
     if (order === null) {
         return false;
     }
-    const order_side = order.size > 0 ? 'LONG' : 'SHORT';
+    const dir = order.is_reduce_only ? -1 : 1;
+    const order_side = (dir * order.size) > 0 ? 'LONG' : 'SHORT';
     if (Math.abs(order.size / 100) === size && Number(price).toFixed(1) === Number(order.price).toFixed(1) && side === order_side) {
         return true
     }
