@@ -331,7 +331,8 @@ function connect() {
                 parsed.result.map(e => {
                     const { size, entry_price, time } = e;
                     if (size === 0 && entry_price === 0) {
-                        pos = null
+                        console.log(`仓位消失`);
+                        pos = null;
                     }
                     else {
                         const side = size > 0 ? 'LONG' : 'SHORT';

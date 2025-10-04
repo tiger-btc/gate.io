@@ -24,10 +24,11 @@ class SocketClient {
     this.lastPrice = 0; // 最新价格
     this.indicators = {}; // 指标信息
     this.wantUsdt = WANT_USDT; // 期望利润
-    this.scale = 0.02; // 默认缩放
+    this.scale = 1; // 默认缩放
     this.config = readJsonFromFileSync('./config/default.json');
     this.bark = new NotificationService(this.config.notification);
     this.bark.sendNotification('交易系统启动', 'GATE.IO');
+    this.timer = null;
   }
 
   async send_to_phone(msg) {
@@ -109,6 +110,12 @@ class SocketClient {
         //console.log(args);
         this.lastPrice = args[0].lastPrice;
         this.indicators = args[0].indicators;
+        if (this.timer === null) {
+          console.log(`开始干活`);
+          this.timer = setInterval(async () => {
+            await this.go();
+          }, 1000);
+        }
       }
 
       if (eventName === 'position:update') {
@@ -119,6 +126,7 @@ class SocketClient {
             console.log('盈 <==> 亏');
           }
         }
+
       }
     });
   }
@@ -145,12 +153,12 @@ class SocketClient {
         // 市价开单
         // 开单 1.5s后
         const size = this.scale * amount;
-        await updateOrder('add', side, size, price);
+        const rl = 0.15;//让点
+        const target_price = side === 'LONG' ? price + rl : price - rl;
+        await updateOrder('add', side, size, target_price);
       }
       if (type === 'ADD' || type === 'REDUCE') {
-        setTimeout(async () => {
-          await this.go();
-        }, 1500);
+
       }
 
       if (type === 'CLOSE') {
@@ -210,7 +218,7 @@ class SocketClient {
         zy: reduce_sub,
         entryPrice, // 补仓价
         reduceCount, // 减仓次数
-        addCount, // 加仓次数
+        addCount: addCount < 0 ? 0 : addCount, // 加仓次数
         sub_price_avg, //持仓差价
         sub_price //补仓差价
       };
@@ -282,11 +290,13 @@ class SocketClient {
         console.log(`本地止盈 ${Math.abs(price_1 - Number(local_entry)).toFixed(2)} 点`, price_1.toFixed(2));
         const price_2 = remote_pos.reduce_price;
         console.log(`模拟止盈 ${remote_pos.zy} 点`, price_2);
+
         const min_price = price_1 > price_2 ? price_2 : price_1;
         const max_price = price_1 > price_2 ? price_1 : price_2;
         const price = side === 'LONG' ? min_price : max_price;//多仓取小的 空仓取大的容易实现
         const rl = 0.15;//让点
         const target_price = side === 'LONG' ? price - rl : price + rl;
+        console.log(`选择止盈 ${size} 于 ${target_price}`);
         await updateOrder('reduce', side, size, target_price);
       }
       else {
@@ -309,7 +319,7 @@ class SocketClient {
       const { side, entryPrice: old_price, addCount, size: remote_size } = remote_pos; //entryPrice使用模拟端补仓价 price 使用模拟端持仓价  使用补仓价更安全
 
 
-      //console.log(`模拟仓位: ${side} 补仓价:${Number(old_price).toFixed(2)} ${remote_size}  补仓:${addCount}次`);
+      console.log(`模拟仓位: ${side} ${remote_size} 补仓:${addCount}次 补仓价:${Number(old_price).toFixed(2)}`);
       const can_open_flag = side === 'LONG' ? this.indicators.can_open_long_flag : this.indicators.can_open_short_flag;
       if (local_pos === null) {
         // 本地无仓位 这里判断null 是为了区别于网络获取失败的时候结果的undefined
@@ -336,7 +346,7 @@ class SocketClient {
       else {
         // 本地有仓位 浮亏 准备补仓
         // 得到模拟仓位的加仓价格、加仓配置、加仓次数 算出应该的补仓价格、补仓数量
-        const { add_price: price, add_size } = remote_pos;
+        const { add_price: price, add_size, entryPrice } = remote_pos;
         const local_size = Math.abs(Number(local_pos.size));
         const remote_size = remote_pos.size * this.scale;
         const price_ok = (side === 'LONG' ? this.lastPrice > price : this.lastPrice < price) && this.lastPrice;
@@ -347,7 +357,7 @@ class SocketClient {
           //要对比仓位大小,不然会出现本地现价单成交了 但是模拟端没成交 就会不停的成交
           const size = add_size * this.scale;
 
-          console.log(`第${addCount}次补仓 ${side} ${size} ==> ${price}`);
+          console.log(`第${addCount < 0 ? 0 : addCount}次补仓${(Math.abs(entryPrice - price)).toFixed(0)}点 ${side} ${size} ==> ${price}`);
           await updateOrder('add', side, size, price);
         }
       }
@@ -382,6 +392,12 @@ class SocketClient {
         if (local_pos) {
           await this.set_reduce(local_pos, remote_pos);
         }
+        else {
+          if (get('add') || get('reduce')) {
+            console.log(`两端均无仓位，清除所有委托`);
+            await clearAllOrders();
+          }
+        }
 
       }
 
@@ -400,12 +416,6 @@ class SocketClient {
 if (require.main === module) {
   global.socket = new SocketClient();
   socket.get = get;
-  const callback = function () {
-    global.socket.go();
-  }
-  //setCallBack(callback);
-  //setTimeout(callback, 1000);
-  setInterval(callback, 1000);
 }
 module.exports = SocketClient;
 
