@@ -42,7 +42,7 @@ class SocketClient {
     }, 0);
     setInterval(async () => {
       await this.updateAuth();
-    }, 1000);
+    }, 5000);
   }
 
   async send_to_phone(msg) {

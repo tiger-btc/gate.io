@@ -13,6 +13,7 @@ const HttpClient = require('./modules/httpClient');
 let add_order = null;
 let reduce_order = null;
 let pos = null;
+let last_price = 0;
 const WS_URL = 'wss://fx-webws.gateio.live/v4/ws/usdt?device_type=0';
 // 需要订阅的频道（按你给的顺序）
 const CHANNELS = [
@@ -151,8 +152,11 @@ async function equalOrder(type, side, size, price) {
     }
     const dir = order.is_reduce_only ? -1 : 1;
     const order_side = (dir * order.size) > 0 ? 'LONG' : 'SHORT';
-    if (Math.abs(order.size / 100) === size && Number(price).toFixed(1) === Number(order.price).toFixed(1) && side === order_side) {
+    if (Math.abs(order.size / 100) === size && Math.abs(Number(price) - Number(order.price)) < 0.1 && side === order_side) {
         return true
+    }
+    else {
+        console.log(`更新 ${side} ${type} 订单 从 ${Math.abs(order.size / 100)}@${Number(order.price).toFixed(1)} ==> ${size}@${Number(price).toFixed(1)}`);
     }
 
     if (side !== order_side) {
@@ -180,12 +184,10 @@ async function updateOrder(type, side, size, price) {
                 const url = `/apiw/v2/futures/usdt/orders/${order.id_string}`;
                 const pd = { "contract": "ETH_USDT", "size": (dir * dir_2 * Math.abs(size) * 100).toFixed(0), "price": price.toFixed(2) }
                 const ret = await httpClient.put(url, pd);
+                console.log(`更新${type === 'reduce' ? '减仓' : '补仓'}订单 ${side} ${size}@${price} ${ret.message}`);
                 if (ret.message === 'success') {
                     return true;
-                } else {
-                    console.log(`更新${type === 'reduce' ? '减仓' : '补仓'}订单 ${side} ${size}@${price} ${ret.message}`);
                 }
-
             } catch (error) {
                 console.log(error.stack);
             }
@@ -256,6 +258,7 @@ function subscribeAll() {
         httpGetPosition();
         const { uid, base_auth } = info;
         let id = 4; // 你的示例从 4 开始，这里也从 4 开始（仅为可读，ID 不必须连续）
+        const t = Math.floor(Date.now() / 1000);
         CHANNELS.forEach((channel) => {
             const msg = {
                 auth: base_auth,
@@ -263,11 +266,15 @@ function subscribeAll() {
                 event: 'subscribe',
                 payload: [String(uid), '!all'],
                 id,
-                time: Math.floor(Date.now() / 1000),
+                time: t,
             };
             id++;
             safeSend(msg);
         });
+
+        const market_pd = { "channel": "futures.mini_ob", "event": "subscribe", "payload": ["ETH_USDT", "5", "0.05", "200ms"], "time": t, "id": id };
+        // 订阅价格
+        safeSend(market_pd);
     }
 
 }
@@ -325,7 +332,7 @@ function connect() {
         // 控制台简要输出（避免刷屏）
         let flag = false;
         if (parsed && parsed.event === 'update') {
-            console.log(`[SUBSCRIBED] ${parsed.channel}`);
+            //console.log(`[SUBSCRIBED] ${parsed.channel}`);
             if (parsed.channel === 'futures.positions') {
                 flag = true;
                 parsed.result.map(e => {
@@ -342,7 +349,7 @@ function connect() {
                 });
             }
             if (parsed.channel === 'futures.orders') {
-                flag = true;
+                //flag = true;
                 parsed.result.map(e => {
                     const { id_string, price, status, left, is_reduce_only, size, create_time } = e;
                     const side = size > 0 ? 'LONG' : 'SHORT';
@@ -373,6 +380,17 @@ function connect() {
 
                 });
             }
+        }
+
+        if (parsed && parsed.channel === 'futures.mini_ob') {
+            const { asks, bids } = parsed.result;
+            //console.log(parsed.result);
+            if (asks && bids) {
+                const ask = Number(asks.at(0)['p']);
+                const bid = Number(bids.at(0)['p']);
+                last_price = (ask + bid) / 2;
+            }
+
         }
         if (flag && callback) {
             callback();
@@ -446,6 +464,9 @@ function get(type) {
     }
     if (type === 'pos') {
         return pos;
+    }
+    if (type === 'price') {
+        return last_price;
     }
 }
 

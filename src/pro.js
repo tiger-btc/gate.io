@@ -6,7 +6,7 @@ const { formatTimestamp } = require('./modules/util');
 const { NotificationService } = require('./modules/notificationService');
 const { get, setCallBack, updateOrder, clearAllOrders, oneKeyClose } = require('./account');
 
-const WANT_USDT = 2.8;
+const WANT_USDT = 5.2;
 
 const oldLog = console.log;
 console.log = (...args) => {
@@ -29,6 +29,10 @@ class SocketClient {
     this.bark = new NotificationService(this.config.notification);
     this.bark.sendNotification('交易系统启动', 'GATE.IO');
     this.timer = null;
+    this.price_local_sub_remote = 0;
+    this.last_t = 0;
+    this.trends = [];
+    this.test = { in: 0, min: 0, max: 0, out: 0, width: 0, side: '', max_lost: 0, max_win: 0 };
   }
 
   async send_to_phone(msg) {
@@ -109,12 +113,41 @@ class SocketClient {
       if (eventName === 'heartbeat') {
         //console.log(args);
         this.lastPrice = args[0].lastPrice;
+        const local_price = Number(get('price'));
+        const remote_price = Number(this.lastPrice);
+        this.price_local_sub_remote = local_price - remote_price;
+        this.trends.push(this.price_local_sub_remote.toFixed(2));
+        this.trends = this.trends.slice(-1000);
         this.indicators = args[0].indicators;
+
+        if (this.test.min > local_price || this.test.min === 0) {
+          this.test.min = local_price;
+        }
+
+        if (this.test.max < local_price) {
+          this.test.max = local_price;
+        }
+
+        if (this.test.in) {
+          this.test.cur_price = local_price;
+          this.test.sub = this.side === 'LONG' ? local_price - this.test.in : this.test.in - local_price;
+          this.test.width = this.test.max - this.test.min;
+          if (this.test.sub < this.test.max_lost || !this.test.max_lost) {
+            this.test.max_lost = this.test.sub;
+          }
+          if (this.test.sub > this.test.max_win || !this.test.max_win) {
+            this.test.max_win = this.test.sub;
+          }
+        }
+
+
+
         if (this.timer === null) {
           console.log(`开始干活`);
+          //logger.info('初始仓位:', { test: 1 });
           this.timer = setInterval(async () => {
             await this.go();
-          }, 1000);
+          }, 500);
         }
       }
 
@@ -136,7 +169,7 @@ class SocketClient {
     try {
       //console.log('收到交易信号', data);
       const { quantity: amount, type, side, timestamp, reason, price } = data;
-      const msg = `收到 ${side} ${type} ${amount} 在 ${price} ${reason}`;
+      const msg = `收到 ${side} ${type} ${amount} 在 ${price} ${reason} 此时价差${this.price_local_sub_remote.toFixed(4)}`;
       this.bark.sendTradeNotification(msg, { success: true });
       // 检查信号时效性（可选）
       if (timestamp) {
@@ -150,21 +183,30 @@ class SocketClient {
       }
       console.log(msg);
       if (type === 'OPEN') {
-        // 市价开单
-        // 开单 1.5s后
+        // 市价开单最保险  限价单也试试 限价单手续费要比市价单少一半
         const size = this.scale * amount;
-        const rl = 0.15;//让点
-        const target_price = side === 'LONG' ? price + rl : price - rl;
-        await updateOrder('add', side, size, target_price);
+        const rl = this.getRl();
+        const target_price = side === 'LONG' ? price + rl.buy : price - rl.sell; // 开多是buy 开空是sell
+        await updateOrder('add', side, size, 0);//市价开单吧 限价基本是赔的时候开进去 赚的时候开不进去
+        this.last_t = Date.now();
+        logger.info(`收到开仓信号 此时本地端和模拟端价格差 ${this.price_local_sub_remote.toFixed(2)} ${this.getTrend()}`);
+        const pos = this.getRemotePosition();
+        if (pos) {
+          logger.info(`执行开仓信号后，模拟仓位已更新`);
+        }
+        else {
+          logger.info(`执行开仓信号后，模拟仓位未更新`);
+        }
       }
       if (type === 'ADD' || type === 'REDUCE') {
-
+        logger.info(`收到加仓信号 此时本地端和模拟端价格差 ${this.price_local_sub_remote.toFixed(2)} ${this.getTrend()}`);
       }
 
       if (type === 'CLOSE') {
         // 平仓
         this.pos = null;
         await oneKeyClose('保险平仓');
+        logger.info(`收到平仓信号 此时本地端和模拟端价格差 ${this.price_local_sub_remote.toFixed(2)} ${this.getTrend()}`);
       }
 
     } catch (error) {
@@ -275,7 +317,7 @@ class SocketClient {
         // 服务端也有仓位才会设置止盈
         // reduceCount = 0 的时候 如果 加仓次数 禁止标志 可开仓标志 可加仓标志 都满足的话 不设置止盈 有一项不符合 设置止盈 提前跑
         const { addCount, reduceCount } = remote_pos;
-        console.log(`加仓 ${addCount}次 减仓 ${reduceCount}次 禁止: ${this.indicators.no_flag} 开仓条件: ${can_open_flag} 加仓条件:${this.indicators.can_add_flag}`);
+        console.log(`当前状态: 加仓 ${addCount}次 减仓 ${reduceCount}次 禁止: ${this.indicators.no_flag} 开仓条件: ${can_open_flag} 加仓条件:${this.indicators.can_add_flag}`);
         let need_quit = false;
         if (addCount > 0 || this.indicators.no_flag || !can_open_flag || !this.indicators.can_add_flag || reduceCount > 0) {
           // 加过仓 止盈跑路
@@ -284,24 +326,33 @@ class SocketClient {
           // 可加仓标志不符合了 止盈跑
           // 减仓次数超过1次 止盈跑
           need_quit = true;
-          console.log('感知到危险,提前跑');
+          console.log('风险预知: 感知到危险,或许可以提前跑');
         }
-        const size = need_quit ? local_size : local_size / 2; // 情况不对的时候跑全部 其他的时候跑一半
-        const price_1 = this.getLimitPriceByPos({ ...local_pos, size });
-        console.log(`本地止盈 ${Math.abs(price_1 - Number(local_entry)).toFixed(2)} 点`, price_1.toFixed(2));
+        const size = reduceCount > 0 ? local_size : local_size / 2; // 情况不对的时候跑全部 其他的时候跑一半
+        //const price_1 = this.getLimitPriceByPos({ ...local_pos, size });
+        //console.log(`本地止盈 ${Math.abs(price_1 - Number(local_entry)).toFixed(2)} 点`, price_1.toFixed(2));
         const price_2 = remote_pos.reduce_price;
-        console.log(`模拟止盈 ${remote_pos.zy} 点`, price_2);
+        console.log(`模拟止盈: ${remote_pos.zy} 点 止盈价 ${price_2}`);
 
-        const min_price = price_1 > price_2 ? price_2 : price_1;
-        const max_price = price_1 > price_2 ? price_1 : price_2;
-        const price = side === 'LONG' ? min_price : max_price;//多仓取小的 空仓取大的容易实现
-        const rl = 0.15;//让点
-        const target_price = side === 'LONG' ? price - rl : price + rl;
-        console.log(`选择止盈 ${size} 于 ${target_price}`);
-        await updateOrder('reduce', side, size, target_price);
+        //const min_price = price_1 > price_2 ? price_2 : price_1;
+        //const max_price = price_1 > price_2 ? price_1 : price_2;
+        //const price = side === 'LONG' ? min_price : max_price;//多仓取小的 空仓取大的容易实现
+        const rl = this.getRl();//让点 GATE价格比币安普遍高0.2左右 开仓的时候空要容易成交 平仓的时候多要容易成交
+        const target_price = side === 'LONG' ? price_2 - rl.sell : price_2 + rl.buy; // 平多是sell 平空是buy
+        console.log(`选择止盈: ${(size * 100 / local_size).toFixed(0)}%仓位 ${size} 于 ${target_price} 处 让利 ${Math.abs(target_price - price_2).toFixed(2)}`);
+
+        const remote_size = remote_pos.size * this.scale;
+        if (Math.abs(local_size - remote_size) <= 0.01) {
+          console.log('仓位对比符合,提交更新止盈');
+          await updateOrder('reduce', side, size, target_price);
+        }
+        else {
+          console.log('仓位对比过小,无需更新止盈');
+        }
+
       }
       else {
-        // 服务端没有仓位的话 直接设置止盈  考虑设置止损
+        //服务端没有仓位的话 直接设置止盈  如果更新成 有止盈单就不再更新止盈的话 这个功能不要了 因为模拟端开仓后远程仓位还没更新就出发的话 会设置错误止盈点位
         const { side, size } = local_pos;
         const price = this.getLimitPriceByPos(local_pos);
         console.log('本地止盈', price);
@@ -332,12 +383,13 @@ class SocketClient {
         }
         else {
           // 不符合追仓条件
+          console.log(`不符合追仓条件,保持空仓`);
           if (this.indicators.no_flag) {
             console.log('转变为禁止标志');
-            if (get('add') || get('reduce')) {
-              // 如果有委托 那么取消了
-              await clearAllOrders();
-            }
+          }
+          if (get('add') || get('reduce')) {
+            // 如果有委托 那么取消了
+            await clearAllOrders();
           }
         }
 
@@ -356,7 +408,7 @@ class SocketClient {
           //要对比仓位大小,不然会出现本地现价单成交了 但是模拟端没成交 就会不停的成交
           const size = add_size * this.scale;
 
-          console.log(`第${addCount < 0 ? 0 : addCount}次补仓${(Math.abs(entryPrice - price)).toFixed(0)}点 ${side} ${size} ==> ${price}`);
+          console.log(`更新补仓: ${(Math.abs(entryPrice - price)).toFixed(0)}点 ${side} ${size} ==> ${price}`);
           await updateOrder('add', side, size, price);
         }
       }
@@ -366,19 +418,89 @@ class SocketClient {
 
   }
 
+  getRl() {
+    // 根据本地端价格差计算让利值 
+    // 价差是负的时候是涨势 gate价格 < 币安价格 以币安价不易在gate开空和平多 本质是sell
+    // 价差是正的时候是跌势 gate价格 > 币安价格 以币安价不易在gate开多和平空 本质是buy
+    let rl = Math.abs(this.price_local_sub_remote * 1.1) + 0.1;
+    rl = 0.3;
+    if (rl < 0.15) {
+      rl = 0.15;
+    }
+    if (rl > 1.5) {
+      rl = 1.5;
+    }
+    // 让 0.15 到 1.5
+    let buy = 0.15;
+    let sell = 0.15;
+    if (this.price_local_sub_remote > 0) {
+      // gate价格高 不容易以币安价格(低价)买入 
+      buy = rl;
+      sell = 0.1;
+    }
+    if (this.price_local_sub_remote < 0) {
+      // gate价格低 不容易以币安价格(高价)卖出
+      buy = 0.1;
+      sell = rl;
+    }
+    return { buy, sell };
+  }
+
+  getTrend() {
+    let trend = '正常波动';
+    const n = 0.35;
+    if (this.price_local_sub_remote < (-1 * n)) {
+      trend = 'LONG';
+    }
+    if (this.price_local_sub_remote > n) {
+      trend = 'SHORT';
+    }
+    const trend_len = 20;
+    const arr = this.trends.slice(-1 * trend_len);
+    const diffs = arr.slice(1).map((v, i) => Math.abs(v - arr[i]));
+    //console.log(diffs);
+    if (diffs.every(e => e < 0.01) && diffs.length === (trend_len - 1) && trend !== '正常波动') {
+      const local_price = Number(get('price'));
+      if (this.test.in === 0) {
+        logger.info(`测试信号 ${trend} ${local_price.toFixed(2)}`);
+        this.test = { in: local_price, min: 0, max: 0, out: 0, side: trend };
+      }
+      else {
+        if (trend !== this.test.side) {
+          // 信号变化
+          this.test.out = local_price;
+          this.test.win = this.test.side === 'LONG' ? local_price - this.test.in : this.test.in - local_price;
+          logger.info(`平仓`, this.test);
+          this.test = { in: 0, min: 0, max: 0, out: 0, width: 0, side: '', max_lost: 0, max_win: 0 };
+
+        }
+      }
+
+    }
+    console.log(this.test);
+    return trend;
+  }
+
   async go() {
     // 核心逻辑
     // 设置限价单 取得本地仓位 设置止盈单
-    this.last_t = Date.now();
-    try {
 
+    try {
+      if (Date.now() - this.last_t < 5000) {
+        //5s内不重复操作 以免频繁改单
+        return;
+      }
+      const local_price = Number(get('price'));
+      const remote_price = Number(this.lastPrice);
+      console.log(`本地端价: ${local_price.toFixed(2)} 模拟端价: ${remote_price.toFixed(2)} 价差: ${this.price_local_sub_remote.toFixed(2)} ${this.getTrend()}`);
       const local_pos = await this.getLocalPosition();
       const remote_pos = this.getRemotePosition();
       if (remote_pos) {
         // 模拟有仓位
 
         const { sub_price_avg, sub_price } = remote_pos;
-        console.log(`入场价差 ${sub_price.toFixed(2)} 持仓价差 ${sub_price_avg.toFixed(2)}`);
+        console.log(`入场价差: ${sub_price.toFixed(2)} 持仓价差: ${sub_price_avg.toFixed(2)}`);
+        //console.log(local_pos);
 
         await this.set_reduce(local_pos, remote_pos);
         await this.set_add(local_pos, remote_pos);
@@ -399,22 +521,25 @@ class SocketClient {
         }
 
       }
-
+      this.last_t = Date.now();
     } catch (error) {
+      this.last_t = Date.now();
       logger.error(error.stack);
     }
-    finally {
-      this.last_t = Date.now();
-    }
+
 
   }
 
 }
 
+function callback() {
+  logger.info('仓位变化', get('pos'));
+}
 
 if (require.main === module) {
   global.socket = new SocketClient();
   socket.get = get;
+  setCallBack(callback);
 }
 module.exports = SocketClient;
 

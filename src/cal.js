@@ -1,7 +1,18 @@
 const fs = require('fs');
 const HttpClient = require('./modules/httpClient');
+const { saveJsonToFileSync } = require('./modules/json');
 const TIME_ZONE = 8;
 const REVERSE_RATE = 0.7064828899273086;
+
+const httpClient = new HttpClient();
+const { api: conf } = readJsonFromFileSync('./config/runtime.json');
+if (conf) {
+  const { baseURL, headers } = conf;
+  httpClient.updateConfig(baseURL, headers);
+  console.log(`更新配置成功`);
+  //console.log(headers.cookie);
+}
+
 
 function readJsonFromFileSync(filePath, defaultValue = {}) {
   try {
@@ -39,9 +50,34 @@ function n(a, dit = 2) {
   }
 }
 
-async function cal(start_ds, end_ds) {
+async function cal_fee(start_time, end_time) {
+  const url = `https://www.gate.com/apiw/v2/futures/usdt/my_trades?contract=&limit=1000&offset=0&start_time=${start_time}&end_time=${end_time}&role=&position_side=`;
+  if (1) {
+    const ret = await httpClient.get(url);
+    const { data, message } = ret;
+    saveJsonToFileSync(`./logs/trade_${start_time}_${end_time}.json`, ret);
+    if (message === 'success') {
+      //console.log(ret);
+      const limit_fee = data.filter(e => e.role === 'Maker').map(e => Number(e.fee));
+      const market_fee = data.filter(e => e.role === 'Taker').map(e => Number(e.fee));
+      const total_limit_fee = Math.abs(limit_fee.reduce((acc, curr) => acc + curr, 0));
+      const total_market_fee = Math.abs(market_fee.reduce((acc, curr) => acc + curr, 0));
 
-  const httpClient = new HttpClient();
+      return {
+        total_limit_fee,
+        total_market_fee
+      }
+    }
+
+  }
+  else {
+    console.log(ret);
+  }
+}
+
+
+
+async function cal(start_ds, end_ds) {
   const types = ['', 'pnl', 'fee'];
   const start_date = new Date(start_ds + `T00:00:00+0${TIME_ZONE}:00`);
   //const hour = end_ds === '2025-09-29' ? `07` : `23`; // 调试用
@@ -53,26 +89,26 @@ async function cal(start_ds, end_ds) {
   const end_time = Math.floor(end_date.getTime() / 1000);
   const type = types.at(0);
   const url = `https://www.gate.com/apiw/v2/futures/usdt/account_book?type=${type}&start_time=${start_time}&end_time=${end_time}&contract=&offset=0&limit=1000`;
-  const { api: conf } = readJsonFromFileSync('./dist/runtime.json');
-  if (conf) {
-    const { baseURL, headers } = conf;
-    httpClient.updateConfig(baseURL, headers);
-    //console.log(url);
+  
+  if (1) {
     const ret = await httpClient.get(url);
     const { data, message } = ret;
+    saveJsonToFileSync(`./logs/account_book_${start_ds}_${end_ds}.json`, ret);
     //console.log('获取手续费', message);
     if (message === 'success') {
       //console.log(ret);
+      const {total_limit_fee,total_market_fee} = await cal_fee(start_time,end_time);
       const fees = data.filter(e => e.type === 'fee').map(e => Number(e.change.split(' ')[0]));
       const pnls = data.filter(e => e.type === 'pnl').map(e => Number(e.change.split(' ')[0]));
       const total_fee = Math.abs(fees.reduce((acc, curr) => acc + curr, 0));
+      const fee_sub = total_fee - total_limit_fee - total_market_fee;
       const total_pnl = pnls.reduce((acc, curr) => acc + curr, 0);
       const net_pnl = total_pnl - total_fee;
-      const fy = total_fee * REVERSE_RATE
+      const fy = total_limit_fee * 0.8 + total_market_fee * 0.71910998;
       const last_pnl = net_pnl + fy;
       if (total_fee || total_pnl) {
         const ds = start_ds === end_ds ? start_ds : `${formatTimestamp(start_time)} - ${formatTimestamp(end_time)}`;
-        console.log(`${ds}  ${weekday}  账面盈 ${s(n(total_pnl, 2), 10)} 减手续  ${s(n(total_fee), 6)} 净盈利 ${s(n(net_pnl, 2), 10)} + 应返佣 ${s(n(fy), 6)} 终盈利 ${s(n(last_pnl), 6)}`);
+        console.log(`${ds}  ${weekday}  账面盈 ${s(n(total_pnl, 2), 10)} 减手续  ${s(n(total_fee,6), 10)} (${total_limit_fee.toFixed(6)} + ${total_market_fee.toFixed(6)}) 净盈利 ${s(n(net_pnl, 2), 10)} + 应返佣 ${s(n(fy,6), 10)} 终盈利 ${s(n(last_pnl), 6)}`);
         return {
           start_ds,
           end_ds,
@@ -91,6 +127,7 @@ async function cal(start_ds, end_ds) {
   }
 
 }
+
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
