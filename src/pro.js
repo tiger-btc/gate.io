@@ -31,8 +31,6 @@ class SocketClient {
     this.timer = null;
     this.price_local_sub_remote = 0;
     this.last_t = 0;
-    this.trends = [];
-    this.test = { in: 0, min: 0, max: 0, out: 0, width: 0, side: '', max_lost: 0, max_win: 0 };
   }
 
   async send_to_phone(msg) {
@@ -116,31 +114,11 @@ class SocketClient {
         const local_price = Number(get('price'));
         const remote_price = Number(this.lastPrice);
         this.price_local_sub_remote = local_price - remote_price;
-        this.trends.push(this.price_local_sub_remote.toFixed(2));
-        this.trends = this.trends.slice(-1000);
+        if (local_price && remote_price) {
+
+        }
+
         this.indicators = args[0].indicators;
-
-        if (this.test.min > local_price || this.test.min === 0) {
-          this.test.min = local_price;
-        }
-
-        if (this.test.max < local_price) {
-          this.test.max = local_price;
-        }
-
-        if (this.test.in) {
-          this.test.cur_price = local_price;
-          this.test.sub = this.side === 'LONG' ? local_price - this.test.in : this.test.in - local_price;
-          this.test.width = this.test.max - this.test.min;
-          if (this.test.sub < this.test.max_lost || !this.test.max_lost) {
-            this.test.max_lost = this.test.sub;
-          }
-          if (this.test.sub > this.test.max_win || !this.test.max_win) {
-            this.test.max_win = this.test.sub;
-          }
-        }
-
-
 
         if (this.timer === null) {
           console.log(`开始干活`);
@@ -341,14 +319,8 @@ class SocketClient {
         const target_price = side === 'LONG' ? price_2 - rl.sell : price_2 + rl.buy; // 平多是sell 平空是buy
         console.log(`选择止盈: ${(size * 100 / local_size).toFixed(0)}%仓位 ${size} 于 ${target_price} 处 让利 ${Math.abs(target_price - price_2).toFixed(2)}`);
 
-        const remote_size = remote_pos.size * this.scale;
-        if (Math.abs(local_size - remote_size) <= 0.01) {
-          console.log('仓位对比符合,提交更新止盈');
-          await updateOrder('reduce', side, size, target_price);
-        }
-        else {
-          console.log('仓位对比过小,无需更新止盈');
-        }
+        //const remote_size = remote_pos.size * this.scale;
+        await updateOrder('reduce', side, size, target_price);
 
       }
       else {
@@ -448,36 +420,13 @@ class SocketClient {
 
   getTrend() {
     let trend = '正常波动';
-    const n = 0.35;
+    const n = 0.4;
     if (this.price_local_sub_remote < (-1 * n)) {
       trend = 'LONG';
     }
     if (this.price_local_sub_remote > n) {
       trend = 'SHORT';
     }
-    const trend_len = 20;
-    const arr = this.trends.slice(-1 * trend_len);
-    const diffs = arr.slice(1).map((v, i) => Math.abs(v - arr[i]));
-    //console.log(diffs);
-    if (diffs.every(e => e < 0.01) && diffs.length === (trend_len - 1) && trend !== '正常波动') {
-      const local_price = Number(get('price'));
-      if (this.test.in === 0) {
-        logger.info(`测试信号 ${trend} ${local_price.toFixed(2)}`);
-        this.test = { in: local_price, min: 0, max: 0, out: 0, side: trend };
-      }
-      else {
-        if (trend !== this.test.side) {
-          // 信号变化
-          this.test.out = local_price;
-          this.test.win = this.test.side === 'LONG' ? local_price - this.test.in : this.test.in - local_price;
-          logger.info(`平仓`, this.test);
-          this.test = { in: 0, min: 0, max: 0, out: 0, width: 0, side: '', max_lost: 0, max_win: 0 };
-
-        }
-      }
-
-    }
-    console.log(this.test);
     return trend;
   }
 

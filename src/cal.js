@@ -104,7 +104,7 @@ async function cal(start_ds, end_ds) {
       const fee_sub = total_fee - total_limit_fee - total_market_fee;
       const total_pnl = pnls.reduce((acc, curr) => acc + curr, 0);
       const net_pnl = total_pnl - total_fee;
-      const fy = total_limit_fee * 0.8 + total_market_fee * 0.71910998;
+      const fy = total_limit_fee * 0.8 + total_market_fee * 0.715;
       const last_pnl = net_pnl + fy;
       if (total_fee || total_pnl) {
         const ds = start_ds === end_ds ? start_ds : `${formatTimestamp(start_time)} - ${formatTimestamp(end_time)}`;

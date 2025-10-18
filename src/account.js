@@ -10,6 +10,7 @@ const { readJsonFromFileSync } = require('./modules/json');
 const { extractCookieValue } = require('./modules/bear');
 const { formatTimestamp } = require('./modules/util');
 const HttpClient = require('./modules/httpClient');
+const { SharedJsonStore } = require('./modules/sharedJsonStore');
 let add_order = null;
 let reduce_order = null;
 let pos = null;
@@ -29,6 +30,7 @@ let watchdogTimer = null;
 let reconnectAttempts = 0;
 let closedByUser = false;
 let callback = null;
+const gate_price = new SharedJsonStore({ url: 'redis://127.0.0.1:6379/0', key: 'gate_price' });
 
 
 const httpClient = new HttpClient();
@@ -152,7 +154,7 @@ async function equalOrder(type, side, size, price) {
     }
     const dir = order.is_reduce_only ? -1 : 1;
     const order_side = (dir * order.size) > 0 ? 'LONG' : 'SHORT';
-    if (Math.abs(order.size / 100) === size && Math.abs(Number(price) - Number(order.price)) < 0.1 && side === order_side) {
+    if (Math.abs(order.size / 100) === size && Math.abs(Number(price) - Number(order.price)) <= 0.01 && side === order_side) {
         return true
     }
     else {
@@ -389,6 +391,7 @@ function connect() {
                 const ask = Number(asks.at(0)['p']);
                 const bid = Number(bids.at(0)['p']);
                 last_price = (ask + bid) / 2;
+                gate_price.write({ price: last_price.toFixed(2) });
             }
 
         }
