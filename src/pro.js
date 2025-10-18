@@ -318,10 +318,14 @@ class SocketClient {
         const rl = this.getRl();//让点 GATE价格比币安普遍高0.2左右 开仓的时候空要容易成交 平仓的时候多要容易成交
         const target_price = side === 'LONG' ? price_2 - rl.sell : price_2 + rl.buy; // 平多是sell 平空是buy
         console.log(`选择止盈: ${(size * 100 / local_size).toFixed(0)}%仓位 ${size} 于 ${target_price} 处 让利 ${Math.abs(target_price - price_2).toFixed(2)}`);
-
-        //const remote_size = remote_pos.size * this.scale;
-        await updateOrder('reduce', side, size, target_price);
-
+        const remote_size = remote_pos.size * this.scale;
+        const p = local_size * 100 / remote_size;
+        if (Number(p.toFixed(0)) <= 50) {
+          console.log(`仓位比例 ${p.toFixed(0)}% 暂不更新止盈`);
+        }
+        else {
+          await updateOrder('reduce', side, size, target_price);
+        }
       }
       else {
         //服务端没有仓位的话 直接设置止盈  如果更新成 有止盈单就不再更新止盈的话 这个功能不要了 因为模拟端开仓后远程仓位还没更新就出发的话 会设置错误止盈点位
